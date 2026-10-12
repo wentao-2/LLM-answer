@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local reproduction workspaces and separately hosted evidence archives.
+.work/
+*.zip
+*.part
+models/
+weights/
+*.safetensors
+*.sqlite
+*.sqlite3
+*.db
+*.bin
+*.pt
+*.pth

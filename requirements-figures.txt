@@ -1,0 +1,5 @@
+# Tested for the published figure sources. Offline scientific verification
+# uses only the Python standard library and does not require these packages.
+numpy==2.3.5
+matplotlib==3.11.2
+Pillow==12.3.0

@@ -1,0 +1,13 @@
+model,history_arm,planned_parents,eligible_parents,source_file,source_sha256,evidence_kind,n_planned,n_valid,valid_rate,ok,invalid,truncated,error
+qwen3-8b-thinking,native_self,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,none,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,native_self,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,copy,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,native_self,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,independent,96,96,1.0,96,0,0,0
+qwen3-8b-thinking,replay_self,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,none,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,replay_self,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,copy,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,replay_self,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,independent,96,96,1.0,96,0,0,0
+qwen3-8b-thinking,replay_other,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,none,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,replay_other,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,copy,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,replay_other,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,independent,96,96,1.0,96,0,0,0
+qwen3-8b-thinking,replay_neutral,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,none,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,replay_neutral,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,copy,48,48,1.0,48,0,0,0
+qwen3-8b-thinking,replay_neutral,48,48,qwen-history-stage2.json,42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391,independent,96,96,1.0,96,0,0,0

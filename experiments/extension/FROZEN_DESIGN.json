@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-10-09T11:17:34.608547+00:00",
+  "scientific_outputs_started": false,
+  "files": {
+    "base-config.json": "528a6782983765e2fd9a8aff0d279eae2372b7c2bbfdc768856bf74365dad79b",
+    "EXPERIMENT_PROTOCOL.md": "bbf2593435488590e2301538cb8f418e8321545f0489f42582c450aece2ac353",
+    "manifests/cross-family.jsonl": "50319b69f632187ce97e6b54cfe7541cb9a65c53d0412360e6263a294e415ac6",
+    "manifests/design-index.json": "f5eec72faeb0b59a337699fc0f1931640beb45c366b7a7bcd394a0786ab02d81",
+    "manifests/gate-independent.jsonl": "687ee77c40af56612a48c52233aad659c0fbb071e6e70765622a821c7c5134b2",
+    "manifests/gate.jsonl": "76313a1907b088ff5d8dc36b1bb747726b74a8fa09425844ffd1bce9960ab5be",
+    "manifests/history-stage1.jsonl": "faf1584d4f0a93010947f7cae0c79d65fd162fde18838d04a9c4cfaab8cea08a",
+    "manifests/native-factorial.jsonl": "1e68cd0c6ac561de6c3024ea8b80d919c86e816617c52bae40c832fb62588108",
+    "qwen-provenance.json": "9d78441a26a4ec230537ee82ec88f3a2eea8e5bac10a83b01d6c3e5e947c3e25",
+    "source/analyze_extension.py": "c80073264cee768051ecf7b3a2a501172ce1b5eae9d2c9e39f5c59369f57eef5",
+    "source/build_extension.py": "506a4b7707f42fcf4bad755b8af6e56246e92cbf9a05237037abf3bdafb20437",
+    "source/download_models.py": "da0e8ed6516507c0d03f3b13b9c3af35719a238b24dd92402bd68b5d86de5d61",
+    "source/prepare_runs.py": "bbd9748b45b1b5f6445844060ea887de57710aa872352b180bb8f7e4944972c0",
+    "source/prepare_smoke.py": "5f2aa8b33abaefa5ce24648bb272b2945ba03963b78661db587db45a7b82f313",
+    "source/run_extension.py": "23a7417f60e30f63037f77fa2f9fbf51529176d45e7b698d518d8407b197d5b8",
+    "source/schedule_runs.py": "d0f5fb100706c1277e12431d168f4fb16c334da4c1e2b25bad444803ab5d5914",
+    "source/test_extension.py": "7536df006fec387010dd0bc7e8311ff8d7c5f0f6caed6799902c4a4f70e508f7",
+    "source/test_runner.py": "372e450d40d3452b12d726e80b3f5027d2ddba4c62fa307c0fad4e927276d756"
+  }
+}

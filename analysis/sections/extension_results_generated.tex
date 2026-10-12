@@ -1,0 +1,48 @@
+% Generated only from terminal real evidence. Do not hand-edit this file.
+% CSV retains unrounded values and provenance records source hashes.
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{@{}llrrcc@{}}
+\toprule
+Model & Group & Valid/planned & MAE & Group pass & Model pass \\
+\midrule
+Qwen3-8B & independent & 32/32 & $5.2\!\times\!10^{-6}$ & Yes & Yes \\
+\midrule
+Mistral-Nemo-Instruct-2407 & positive & 16/16 & 0.0299 & Yes & No \\
+ & zero & 15/16 & 0.2834 & No &  \\
+ & negative & 16/16 & 0.2273 & No &  \\
+ & baseline & 16/16 & 0.0326 & Yes &  \\
+ & independent & 29/32 & 0.1393 & No &  \\
+\midrule
+Phi-4-reasoning & positive & 5/16 & 0.0003 & No & No \\
+ & zero & 4/16 & 0.0000 & No &  \\
+ & negative & 10/16 & 0.0003 & No &  \\
+ & baseline & 2/16 & $1.3\!\times\!10^{-5}$ & No &  \\
+ & independent & 8/32 & $2.0\!\times\!10^{-5}$ & No &  \\
+\bottomrule
+\end{tabular}
+\caption{Qualification results under the frozen validity and accuracy thresholds.}
+\label{tab:extension-qualification}
+\end{table*}
+MAE gives equal weight to numerical families among valid reports. The independent extension row supplements that checkpoint's existing qualification. All planned gate records have terminal outcomes.
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Model & Stage or arm & Valid/planned & Eligible parents \\
+\midrule
+Qwen3-8B & Initial generation & 48/48 & 48/48 \\
+ & native self & 192/192 &  \\
+ & replay self & 192/192 &  \\
+ & replay other & 192/192 &  \\
+ & replay neutral & 192/192 &  \\
+\bottomrule
+\end{tabular}
+\caption{Coverage of initial generation and the four continuation arms.}
+\label{tab:extension-history-coverage}
+\end{table*}
+Each eligible parent forms four evidence branches in each arm. Parent failures create no child prompts. Child denominators cover the formed cohort, and all reported planned records are terminal.
+
+Table~\ref{tab:extension-native-configurations} in the main paper gives all native configurations. Actual generated length is not used to select or group observations.

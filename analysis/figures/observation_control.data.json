@@ -1,0 +1,564 @@
+{
+  "input_sha256": "778f442fc19137dfa017fee6a851704e6317ed01cbafee23997a8291749822d3",
+  "script_sha256": "00fba9aab2abfd1e21df4aa5b80835fdf0198c7c9ffb7fb5fe6bd68fbb345092",
+  "width_inches": 6.3,
+  "height_inches": 3.15,
+  "minimum_font_points": 9.5,
+  "font": "Times New Roman",
+  "text_within_canvas": true,
+  "interval": "range of family means, not confidence interval",
+  "points": [
+    {
+      "panel": "expression",
+      "rule": "direct",
+      "condition": "general",
+      "metric": {
+        "n": 192,
+        "families": 6,
+        "planned_families": 6,
+        "family_values": {
+          "2681e835e1fba79d5379af7c": 0.02280626299901239,
+          "96627aa93958adc679dacc26": 0.014875283720781533,
+          "94041ee13ddade7c65b6e35d": 0.024109938070217798,
+          "d4bfd770680b83fe5ad86ed1": 0.02181359904629814,
+          "e6ef3240b1d41da619f96eee": 0.02568718440133059,
+          "836fd5005fa40dded731d5d8": 0.017972417416122818
+        },
+        "estimate": 0.021210780942293877,
+        "family_range": [
+          0.014875283720781533,
+          0.02568718440133059
+        ]
+      }
+    },
+    {
+      "panel": "expression",
+      "rule": "direct",
+      "condition": "explicit",
+      "metric": {
+        "n": 192,
+        "families": 6,
+        "planned_families": 6,
+        "family_values": {
+          "2681e835e1fba79d5379af7c": 0.025356855383247563,
+          "96627aa93958adc679dacc26": 0.016712994854450228,
+          "94041ee13ddade7c65b6e35d": 0.044449474489817294,
+          "d4bfd770680b83fe5ad86ed1": 0.013430973070122738,
+          "e6ef3240b1d41da619f96eee": 0.030862015638863486,
+          "836fd5005fa40dded731d5d8": 0.03574593162558075
+        },
+        "estimate": 0.02775970751034701,
+        "family_range": [
+          0.013430973070122738,
+          0.044449474489817294
+        ]
+      }
+    },
+    {
+      "panel": "expression",
+      "rule": "selector",
+      "condition": "general",
+      "metric": {
+        "n": 192,
+        "families": 6,
+        "planned_families": 6,
+        "family_values": {
+          "2681e835e1fba79d5379af7c": 0.0671900133604831,
+          "96627aa93958adc679dacc26": 0.028939156881875504,
+          "94041ee13ddade7c65b6e35d": 0.06628353087416192,
+          "d4bfd770680b83fe5ad86ed1": 0.05868664357627391,
+          "e6ef3240b1d41da619f96eee": 0.0384212910086231,
+          "836fd5005fa40dded731d5d8": 0.05183446196467091
+        },
+        "estimate": 0.051892516277681405,
+        "family_range": [
+          0.028939156881875504,
+          0.0671900133604831
+        ]
+      }
+    },
+    {
+      "panel": "expression",
+      "rule": "selector",
+      "condition": "explicit",
+      "metric": {
+        "n": 192,
+        "families": 6,
+        "planned_families": 6,
+        "family_values": {
+          "2681e835e1fba79d5379af7c": 0.017702297702004766,
+          "96627aa93958adc679dacc26": 0.005230212803410621,
+          "94041ee13ddade7c65b6e35d": 0.006761250000000006,
+          "d4bfd770680b83fe5ad86ed1": 0.010264662023758005,
+          "e6ef3240b1d41da619f96eee": 0.006777130424954812,
+          "836fd5005fa40dded731d5d8": 0.010784041567167925
+        },
+        "estimate": 0.00958659908688269,
+        "family_range": [
+          0.005230212803410621,
+          0.017702297702004766
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "ordinary",
+      "rho": 0,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.37464026687394425,
+          "91974a98b64b785e310f3c67": 0.49926172664349605,
+          "19817a0e2b745d55f9ca19ca": 0.21345005249662047,
+          "13686272f27fe89f97e0e25f": 0.37848815715329426
+        },
+        "estimate": 0.36646005079183874,
+        "family_range": [
+          0.21345005249662047,
+          0.49926172664349605
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "ordinary",
+      "rho": 0,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 1.0766992263572945,
+          "91974a98b64b785e310f3c67": 0.682916573396961,
+          "19817a0e2b745d55f9ca19ca": 0.9995620797516681,
+          "13686272f27fe89f97e0e25f": 1.14404242530891
+        },
+        "estimate": 0.9758050762037085,
+        "family_range": [
+          0.682916573396961,
+          1.14404242530891
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "ordinary",
+      "rho": 0.5,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 31,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": -0.001325192461353493,
+          "91974a98b64b785e310f3c67": 0.09391750747218956,
+          "19817a0e2b745d55f9ca19ca": 0.7304999599817996,
+          "13686272f27fe89f97e0e25f": 0.35664611325186596
+        },
+        "estimate": 0.2949345970611254,
+        "family_range": [
+          -0.001325192461353493,
+          0.7304999599817996
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "ordinary",
+      "rho": 0.5,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 1.3602852514322044,
+          "91974a98b64b785e310f3c67": 1.1604743384391174,
+          "19817a0e2b745d55f9ca19ca": 0.9339228572738019,
+          "13686272f27fe89f97e0e25f": 1.2268824553756106
+        },
+        "estimate": 1.1703912256301836,
+        "family_range": [
+          0.9339228572738019,
+          1.3602852514322044
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "ordinary",
+      "rho": 1,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 31,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.24850167340452653,
+          "91974a98b64b785e310f3c67": 0.45523095156564397,
+          "19817a0e2b745d55f9ca19ca": 0.0,
+          "13686272f27fe89f97e0e25f": 0.0
+        },
+        "estimate": 0.17593315624254263,
+        "family_range": [
+          0.0,
+          0.45523095156564397
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "explicit",
+      "rho": 0,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.8748077478909967,
+          "91974a98b64b785e310f3c67": 0.8736785681461827,
+          "19817a0e2b745d55f9ca19ca": 0.9980109107842895,
+          "13686272f27fe89f97e0e25f": 1.0071966651676965
+        },
+        "estimate": 0.9384234729972913,
+        "family_range": [
+          0.8736785681461827,
+          1.0071966651676965
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "explicit",
+      "rho": 0,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 1.0014459247572274,
+          "91974a98b64b785e310f3c67": 0.9992198394554102,
+          "19817a0e2b745d55f9ca19ca": 0.9993293899128123,
+          "13686272f27fe89f97e0e25f": 1.0000852264079525
+        },
+        "estimate": 1.0000200951333507,
+        "family_range": [
+          0.9992198394554102,
+          1.0014459247572274
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "explicit",
+      "rho": 0.5,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.454526698409998,
+          "91974a98b64b785e310f3c67": 0.4907731840152187,
+          "19817a0e2b745d55f9ca19ca": 0.44203240072640776,
+          "13686272f27fe89f97e0e25f": 0.5070610188161865
+        },
+        "estimate": 0.47359832549195274,
+        "family_range": [
+          0.44203240072640776,
+          0.5070610188161865
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "explicit",
+      "rho": 0.5,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.9301928929677162,
+          "91974a98b64b785e310f3c67": 1.0002528007075544,
+          "19817a0e2b745d55f9ca19ca": 0.9997943669557845,
+          "13686272f27fe89f97e0e25f": 1.2935699559948028
+        },
+        "estimate": 1.0559525041564646,
+        "family_range": [
+          0.9301928929677162,
+          1.2935699559948028
+        ]
+      }
+    },
+    {
+      "panel": "weight",
+      "condition": "explicit",
+      "rho": 1,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.0,
+          "91974a98b64b785e310f3c67": 0.0,
+          "19817a0e2b745d55f9ca19ca": 0.0,
+          "13686272f27fe89f97e0e25f": 0.12462868922843695
+        },
+        "estimate": 0.031157172307109238,
+        "family_range": [
+          0.0,
+          0.12462868922843695
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "ordinary",
+      "rho": 0,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.07534151892613741,
+          "91974a98b64b785e310f3c67": 0.07449131467205014,
+          "19817a0e2b745d55f9ca19ca": 0.12010443115160396,
+          "13686272f27fe89f97e0e25f": 0.09122646922246219
+        },
+        "estimate": 0.09029093349306343,
+        "family_range": [
+          0.07449131467205014,
+          0.12010443115160396
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "ordinary",
+      "rho": 0,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.00513752408598383,
+          "91974a98b64b785e310f3c67": 0.06622596685082874,
+          "19817a0e2b745d55f9ca19ca": 0.0002044166685625584,
+          "13686272f27fe89f97e0e25f": 0.07272499999999998
+        },
+        "estimate": 0.03607322690134378,
+        "family_range": [
+          0.0002044166685625584,
+          0.07272499999999998
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "ordinary",
+      "rho": 0.5,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.08471367602996255,
+          "91974a98b64b785e310f3c67": 0.07640537072243345,
+          "19817a0e2b745d55f9ca19ca": 0.15108375,
+          "13686272f27fe89f97e0e25f": 0.07408928417602798
+        },
+        "estimate": 0.09657302023210598,
+        "family_range": [
+          0.07408928417602798,
+          0.15108375
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "ordinary",
+      "rho": 0.5,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.05226334269662919,
+          "91974a98b64b785e310f3c67": 0.035387500000000016,
+          "19817a0e2b745d55f9ca19ca": 0.1127995892661555,
+          "13686272f27fe89f97e0e25f": 0.09256407242693773
+        },
+        "estimate": 0.07325362609743061,
+        "family_range": [
+          0.035387500000000016,
+          0.1127995892661555
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "ordinary",
+      "rho": 1,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.03465,
+          "91974a98b64b785e310f3c67": 0.0596125,
+          "19817a0e2b745d55f9ca19ca": 0.004337499999999994,
+          "13686272f27fe89f97e0e25f": 0.0
+        },
+        "estimate": 0.02465,
+        "family_range": [
+          0.0,
+          0.0596125
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "explicit",
+      "rho": 0,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.029012500000000024,
+          "91974a98b64b785e310f3c67": 0.026350000000000044,
+          "19817a0e2b745d55f9ca19ca": 9.340386810337449e-05,
+          "13686272f27fe89f97e0e25f": 0.0002770354289210186
+        },
+        "estimate": 0.013933234824256116,
+        "family_range": [
+          9.340386810337449e-05,
+          0.029012500000000024
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "explicit",
+      "rho": 0,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.0003866573033707889,
+          "91974a98b64b785e310f3c67": 0.00024022540596183029,
+          "19817a0e2b745d55f9ca19ca": 0.00012051186943620729,
+          "13686272f27fe89f97e0e25f": 0.00013921475735559352
+        },
+        "estimate": 0.000221652334031105,
+        "family_range": [
+          0.00012051186943620729,
+          0.0003866573033707889
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "explicit",
+      "rho": 0.5,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.06378749999999998,
+          "91974a98b64b785e310f3c67": 0.059069977965224785,
+          "19817a0e2b745d55f9ca19ca": 0.08313269132524237,
+          "13686272f27fe89f97e0e25f": 0.06572500000000002
+        },
+        "estimate": 0.06792879232261678,
+        "family_range": [
+          0.059069977965224785,
+          0.08313269132524237
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "explicit",
+      "rho": 0.5,
+      "branch": "conflict",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.008175469520282272,
+          "91974a98b64b785e310f3c67": 0.00011346685082873342,
+          "19817a0e2b745d55f9ca19ca": 0.0002709226032806891,
+          "13686272f27fe89f97e0e25f": 0.09404235961123109
+        },
+        "estimate": 0.025650554646405695,
+        "family_range": [
+          0.00011346685082873342,
+          0.09404235961123109
+        ]
+      }
+    },
+    {
+      "panel": "update_error",
+      "condition": "explicit",
+      "rho": 1,
+      "branch": "agree",
+      "planned": 32,
+      "metric": {
+        "n": 32,
+        "families": 4,
+        "planned_families": 4,
+        "family_values": {
+          "afa3deb8b659d8c90dc83725": 0.0,
+          "91974a98b64b785e310f3c67": 0.0,
+          "19817a0e2b745d55f9ca19ca": 0.0,
+          "13686272f27fe89f97e0e25f": 0.025400000000000006
+        },
+        "estimate": 0.0063500000000000015,
+        "family_range": [
+          0.0,
+          0.025400000000000006
+        ]
+      }
+    }
+  ]
+}

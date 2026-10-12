@@ -1,0 +1,10 @@
+# Keep the bytes used by the scientific and figure provenance ledgers.
+experiments/** -text
+analysis/** -text
+provenance/** -text
+reproducibility/** -text
+scripts/*.py text eol=lf
+tests/*.py text eol=lf
+docs/*.md text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

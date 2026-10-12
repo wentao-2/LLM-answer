@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrrl@{}}
+\toprule
+Checkpoint / runtime & Group & Valid/planned & Family MAE & Pass \\
+\midrule
+Standard Phi-4 / SDPA & Baseline & 16/16 & $2.2\times10^{-5}$ & Yes \\
+Standard Phi-4 / SDPA & Independent & 32/32 & $7.4\times10^{-5}$ & Yes \\
+Standard Phi-4 / SDPA & Negative & 16/16 & $2.2\times10^{-5}$ & Yes \\
+Standard Phi-4 / SDPA & Positive & 16/16 & $2.2\times10^{-5}$ & Yes \\
+Standard Phi-4 / SDPA & Zero & 16/16 & $0$ & Yes \\
+Qwen3 / vLLM & Baseline & 16/16 & $3.5\times10^{-6}$ & Yes \\
+Qwen3 / vLLM & Independent & 32/32 & $0.0067$ & Yes \\
+Qwen3 / vLLM & Negative & 16/16 & $9.6\times10^{-6}$ & Yes \\
+Qwen3 / vLLM & Positive & 16/16 & $9.6\times10^{-6}$ & Yes \\
+Qwen3 / vLLM & Zero & 16/16 & $0$ & Yes \\
+\bottomrule
+\end{tabular*}
+\caption{Completed numerical qualification. Standard Phi-4 qualifies before its downstream stages. The new Qwen3 runtime check is a subsequent diagnostic.}
+\label{tab:review-qualification}
+\end{table*}

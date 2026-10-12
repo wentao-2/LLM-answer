@@ -1,0 +1,37 @@
+{
+  "kind": "review_supplement",
+  "sources": {
+    "summaries": {
+      "file": "summaries.json",
+      "sha256": "469365ddd7f942fc136091995a844de6ee27302d4a17b07948daf99e60bc2a6c"
+    },
+    "static_csv": {
+      "file": "phi_static.csv",
+      "sha256": "e10c1c066fbdaa2dd1fa8ef2a2fde59f1116f6b3a0ca6021429b72d64014d370"
+    },
+    "legacy_csv": {
+      "file": "attribution_decomposition.csv",
+      "sha256": "068359eac8bebd9b99c68851abc2b6ad8eeca9645338d77036735ed683b3637e"
+    }
+  },
+  "selection": "All four arms and both qualified checkpoints for itemwise absolute errors in panels a/b. Panel c: no-new-evidence total presentation contrasts and full constructed-cohort bounds. Panel d: large-parent-error cohort, independent update signed and absolute means on identical valid pairs. Counts label complete/planned pairs; panel a/b pair denominators are exported in the CSV and main table.",
+  "rendering": {
+    "width_inches": 6.3,
+    "height_inches": 4.2,
+    "font": "Times New Roman",
+    "minimum_font_points": 9.5,
+    "text_within_canvas": true,
+    "point_and_bound_rows_separate": true,
+    "note": "Bounds are deterministic missingness bounds, not confidence intervals."
+  },
+  "outputs": [
+    {
+      "file": "review_history.pdf",
+      "sha256": "0358a129e65279013ffb3ef999a8e34fe3782fe735aed9c7d756fcb8cc356765"
+    },
+    {
+      "file": "review_history.svg",
+      "sha256": "804cff924a5650a79a0fe1d7ce7f599d40f02ee0b07137611eec77a408863202"
+    }
+  ]
+}

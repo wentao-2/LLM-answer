@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+{\small\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllr rrl@{}}
+\toprule
+Model & Presentation & Evidence & Pairs & Signed $R_B$ & Mean $|R_B|$ & Signed residual bounds \\
+\midrule
+Qwen3 & Native history & Copy & 130/142 & $0.0025$ & $0.0035$ & \shortstack[l]{$[-0.0675,$\\$0.0599]$} \\
+Qwen3 & Native history & Independent & 265/284 & $4.7\times10^{-4}$ & $5.8\times10^{-4}$ & \shortstack[l]{$[-0.0025,$\\$9.3\times10^{-4}]$} \\
+Qwen3 & Self replay & Copy & 133/142 & $-0.0015$ & $0.0026$ & \shortstack[l]{$[-0.0378,$\\$0.0329]$} \\
+Qwen3 & Self replay & Independent & 273/284 & $-0.0020$ & $0.0034$ & \shortstack[l]{$[-0.0030,$\\$4.9\times10^{-4}]$} \\
+Qwen3 & Other replay & Copy & 139/142 & $-0.0013$ & $0.0013$ & \shortstack[l]{$[-0.0117,$\\$0.0094]$} \\
+Qwen3 & Other replay & Independent & 281/284 & $8.5\times10^{-4}$ & $9.8\times10^{-4}$ & \shortstack[l]{$[-0.0068,$\\$0.0036]$} \\
+Qwen3 & Neutral replay & Copy & 133/142 & $-0.0014$ & $0.0024$ & \shortstack[l]{$[-0.0410,$\\$0.0294]$} \\
+Qwen3 & Neutral replay & Independent & 276/284 & $-4.4\times10^{-4}$ & $6.0\times10^{-4}$ & \shortstack[l]{$[-4.4\times10^{-4},$\\$-4.4\times10^{-4}]$} \\
+Phi-4 & Native history & Copy & 48/48 & $0.1282$ & $0.1282$ & \shortstack[l]{$[0.1282,$\\$0.1282]$} \\
+Phi-4 & Native history & Independent & 96/96 & $-2.7\times10^{-5}$ & $1.0\times10^{-4}$ & \shortstack[l]{$[-2.7\times10^{-5},$\\$-2.7\times10^{-5}]$} \\
+Phi-4 & Self replay & Copy & 48/48 & $0.0373$ & $0.0373$ & \shortstack[l]{$[0.0373,$\\$0.0373]$} \\
+Phi-4 & Self replay & Independent & 96/96 & $-1.7\times10^{-5}$ & $1.1\times10^{-4}$ & \shortstack[l]{$[-1.7\times10^{-5},$\\$-1.7\times10^{-5}]$} \\
+Phi-4 & Other replay & Copy & 48/48 & $0.0362$ & $0.0362$ & \shortstack[l]{$[0.0362,$\\$0.0362]$} \\
+Phi-4 & Other replay & Independent & 96/96 & $-2.1\times10^{-5}$ & $1.1\times10^{-4}$ & \shortstack[l]{$[-2.1\times10^{-5},$\\$-2.1\times10^{-5}]$} \\
+Phi-4 & Neutral replay & Copy & 48/48 & $0.0353$ & $0.0353$ & \shortstack[l]{$[0.0353,$\\$0.0353]$} \\
+Phi-4 & Neutral replay & Independent & 96/96 & $-1.7\times10^{-5}$ & $1.1\times10^{-4}$ & \shortstack[l]{$[-1.7\times10^{-5},$\\$-1.7\times10^{-5}]$} \\
+\bottomrule
+\end{tabular*}
+}
+\caption{Signed and absolute generated history update errors on identical complete pairs. Bounds cover all constructed pairs for each signed residual.}
+\label{tab:review-update-errors}
+\end{table*}

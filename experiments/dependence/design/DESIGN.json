@@ -1,0 +1,98 @@
+{
+  "registered_at": "2026-10-11T14:11:48.647765+00:00",
+  "version": "i16-dependence-enhancement-20261011",
+  "allocation": [
+    {
+      "model": "phi4-standard-r6",
+      "planned": 1440,
+      "shards": 6,
+      "jobs": [
+        "phi-s00",
+        "phi-s01",
+        "phi-s02",
+        "phi-s03",
+        "phi-s04",
+        "phi-s05"
+      ]
+    },
+    {
+      "model": "qwen3-8b-r6",
+      "planned": 672,
+      "shards": 2,
+      "jobs": [
+        "qwen-s00",
+        "qwen-s01"
+      ]
+    }
+  ],
+  "rho": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "arms": [
+    "native_self",
+    "replay_self"
+  ],
+  "reminders": {
+    "general_bayes": "Use Bayes' theorem to combine the observations according to the stated probabilities before reporting the probability of H=1.",
+    "source_structure": "First identify which physical sensor observation generated each displayed record. Treat multiple records of the same observed sensor value as repeated documentation of that observation. Treat a reading from a conditionally independent second sensor as an additional observation. Use these observation sources when combining the likelihoods."
+  },
+  "new_calls": 2112,
+  "frozen_source_hashes": {
+    "phi_parents_manifest": {
+      "source": "standard-phi/study/manifests/parents.jsonl",
+      "sha256": "0cc3359d39e8e0d57f5cc8bb8b489a2c1c1224d98cb3a5d524deca2e863eb1ee",
+      "size": 65442
+    },
+    "phi_parents_db": {
+      "source": "standard-phi/study/results/main.sqlite",
+      "sha256": "41ba09208ab24d6a52acf0e87e11c90b1813f7f92b90481df7031fc8f46e184b",
+      "size": 21999616
+    },
+    "phi_controls_manifest": {
+      "source": "standard-phi/study/manifests/history.jsonl",
+      "sha256": "610de8ad0dca15a4fa49688c1955937276ce2394cb35d5cc1b360a924231f84c",
+      "size": 2707080
+    },
+    "phi_controls_db": {
+      "source": "standard-phi/study/results/history.sqlite",
+      "sha256": "13dba035c89db8dbc9ab3c22d082c61a2f4edf9121bff347defcb4256b14a4d8",
+      "size": 11067392
+    },
+    "qwen_parents_manifest": {
+      "source": "inference/manifests/qwen-parents.jsonl",
+      "sha256": "4e39d95441953b1531f2de71ae415a64b3ff238c08ddc549368de8037a96a5a6",
+      "size": 205782
+    },
+    "qwen_parents_db": {
+      "source": "inference/results/qwen-parents.sqlite",
+      "sha256": "e1f8b55bf7141498c632cc9e52072ec74c5b0601c7bd54d6bbfe4f717cf39406",
+      "size": 3473408
+    },
+    "phi_config": {
+      "source": "standard-phi/study/jobs/history-s00/config.json",
+      "sha256": "33f7b87779fe08db22aabc94701f89eaaf0b54900abd3eb58256637567402bb1",
+      "size": 697
+    },
+    "phi_checkpoint_inventory": {
+      "source": "standard-phi/DOWNLOAD_VERIFIED.json",
+      "sha256": "6373ad8caa437e31dadecb852f274944eef10bb32d70ea868cdf5a0121d74d65",
+      "size": 3031
+    },
+    "qwen_config": {
+      "source": "vllm-r6/jobs/main-s00/config.json",
+      "sha256": "64184945490b298ca759fe53b83c1fff5cbab6f7268c1f9f77063b3325f5f840",
+      "size": 617
+    },
+    "qwen_checkpoint_inventory": {
+      "source": "vllm-r6/CHECKPOINT_VERIFIED.json",
+      "sha256": "f7a660998224fbc2a119b0cfecb3e4dcc581d8834469037239c8f61fda7c9102",
+      "size": 2049
+    }
+  },
+  "primary": "agreement weight curve and preserved conflict weight; selective copy correction with independent update retention",
+  "scientific_inference_started": false
+}

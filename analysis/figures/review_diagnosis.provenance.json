@@ -1,0 +1,37 @@
+{
+  "kind": "review_supplement",
+  "sources": {
+    "summaries": {
+      "file": "summaries.json",
+      "sha256": "469365ddd7f942fc136091995a844de6ee27302d4a17b07948daf99e60bc2a6c"
+    },
+    "static_csv": {
+      "file": "phi_static.csv",
+      "sha256": "e10c1c066fbdaa2dd1fa8ef2a2fde59f1116f6b3a0ca6021429b72d64014d370"
+    },
+    "legacy_csv": {
+      "file": "attribution_decomposition.csv",
+      "sha256": "068359eac8bebd9b99c68851abc2b6ad8eeca9645338d77036735ed683b3637e"
+    }
+  },
+  "selection": "Panel a: independent agreeing readings in both representations, legacy restrictive condition. Qwen retained SDPA and standard Phi-4. Panel b: all four uniform-vLLM wording strata, common twelve reports; counts differ from full-design bound targets.",
+  "rendering": {
+    "width_inches": 6.3,
+    "height_inches": 2.94,
+    "font": "Times New Roman",
+    "minimum_font_points": 9.5,
+    "text_within_canvas": true,
+    "point_and_bound_rows_separate": true,
+    "note": "Bounds are deterministic missingness bounds, not confidence intervals."
+  },
+  "outputs": [
+    {
+      "file": "review_diagnosis.pdf",
+      "sha256": "718d82bab160155ce75c3f011e6a082626a8f891d9d2b7ad653436bc9ccdb199"
+    },
+    {
+      "file": "review_diagnosis.svg",
+      "sha256": "9cadf5369301e6f7d44f55b9cc83ac44195aac1165fd1a40abf0dc5b3bad90db"
+    }
+  ]
+}

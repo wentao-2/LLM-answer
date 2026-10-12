@@ -1,0 +1,3699 @@
+{
+  "schema_version": 1,
+  "provenance": "Frozen analysis and report extraction only. No scientific estimate or readout was recalculated. Cells retain exact extracted numbers until rendering.",
+  "sources": [
+    {
+      "path": "i16-self-evidence/results/formal-4gpu-recovery/analysis/summary.json",
+      "sha256": "c88739c0e6be6b35b9f49534aa7411a5a5c5590aad8d830d7993768a9b670add"
+    },
+    {
+      "path": "i16-self-evidence/results/mechanism-discrimination/analysis/summary.json",
+      "sha256": "dcac8477fa6b8ee7fa3e642cc0a2570acf700772533d8f3ac21798e6b436b9d4"
+    },
+    {
+      "path": "i16-self-evidence/results/validation-8gpu-recovery/analysis/summary.json",
+      "sha256": "aeb894630b7db5594e7399af9425a4ef3fdbb9326f4662b1f96e8c64983ae281"
+    },
+    {
+      "path": "i16-self-evidence/results/mechanism-gate/analysis/summary.json",
+      "sha256": "73b07043ce1cd1bf46d26e10617646c791c5a331a36e1ae1ea0ad64902a91913"
+    },
+    {
+      "path": "i16-self-evidence/results/validation-gate/analysis/summary.json",
+      "sha256": "fe00b2727593d17a7a9926dc275bf1eec5384cc7e9d4c4a2e4ffc033ab96fd0c"
+    },
+    {
+      "path": "i16-self-evidence/results/validation-final-report/attribution_decomposition.csv",
+      "sha256": "068359eac8bebd9b99c68851abc2b6ad8eeca9645338d77036735ed683b3637e"
+    },
+    {
+      "path": "i16-self-evidence/FINAL_RESULTS.md",
+      "sha256": "60fbc97e0256543c5774b8f9e16e06371f80c996c4019583728a6ecda7becdcb",
+      "note": "Initial competence values are the eight-decimal values in the capability table."
+    }
+  ],
+  "tables": [
+    {
+      "label": "tab:competence",
+      "rows": [
+        [
+          "1",
+          "Qwen3 thinking",
+          "Calibration",
+          "358/360",
+          {
+            "format": "number",
+            "value": 8.15e-06
+          },
+          "Pass"
+        ],
+        [
+          "1",
+          "Qwen3 thinking",
+          "Baseline",
+          "239/240",
+          {
+            "format": "number",
+            "value": 1.34e-05
+          },
+          "Pass"
+        ],
+        [
+          "1",
+          "Qwen3 direct",
+          "Calibration",
+          "360/360",
+          {
+            "format": "number",
+            "value": 0.14092671
+          },
+          "Fail"
+        ],
+        [
+          "1",
+          "Qwen3 direct",
+          "Baseline",
+          "240/240",
+          {
+            "format": "number",
+            "value": 0.13784354
+          },
+          "Fail"
+        ],
+        [
+          "1",
+          "Qwen2.5 instruct",
+          "Calibration",
+          "360/360",
+          {
+            "format": "number",
+            "value": 0.14824487
+          },
+          "Fail"
+        ],
+        [
+          "1",
+          "Qwen2.5 instruct",
+          "Baseline",
+          "240/240",
+          {
+            "format": "number",
+            "value": 0.10647538
+          },
+          "Fail"
+        ],
+        "\\midrule",
+        [
+          2,
+          "Qwen3 thinking",
+          "Positive",
+          "16/16",
+          {
+            "format": "number",
+            "value": 1.0893750892865348e-05
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Zero",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Negative",
+          "16/16",
+          {
+            "format": "number",
+            "value": 1.0728687500008958e-05
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Baseline",
+          "16/16",
+          {
+            "format": "number",
+            "value": 1.1786625000011555e-05
+          },
+          "Pass"
+        ],
+        "\\addlinespace",
+        [
+          2,
+          "OLMo instruct",
+          "Positive",
+          "0/16",
+          {
+            "format": "number",
+            "value": null
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Zero",
+          "0/16",
+          {
+            "format": "number",
+            "value": null
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Negative",
+          "0/16",
+          {
+            "format": "number",
+            "value": null
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Baseline",
+          "0/16",
+          {
+            "format": "number",
+            "value": null
+          },
+          "Fail"
+        ],
+        "\\addlinespace",
+        [
+          3,
+          "Qwen3 thinking",
+          "Positive",
+          "16/16",
+          {
+            "format": "number",
+            "value": 6.38587678572413e-06
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Zero",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Negative",
+          "16/16",
+          {
+            "format": "number",
+            "value": 6.4511823666584325e-06
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Baseline",
+          "16/16",
+          {
+            "format": "number",
+            "value": 7.832485321531378e-06
+          },
+          "Pass"
+        ],
+        "\\addlinespace",
+        [
+          3,
+          "Qwen3.5 thinking",
+          "Positive",
+          "16/16",
+          {
+            "format": "number",
+            "value": 1.2563933400600025e-11
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Zero",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Negative",
+          "16/16",
+          {
+            "format": "number",
+            "value": 5.435675484374847e-09
+          },
+          "Pass"
+        ],
+        [
+          "",
+          "",
+          "Baseline",
+          "16/16",
+          {
+            "format": "number",
+            "value": 6.9053764442661425e-12
+          },
+          "Pass"
+        ],
+        "\\addlinespace",
+        [
+          3,
+          "Mistral instruct",
+          "Positive",
+          "11/16",
+          {
+            "format": "number",
+            "value": 0.24265250172532782
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Zero",
+          "14/16",
+          {
+            "format": "number",
+            "value": 0.22705989583333333
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Negative",
+          "11/16",
+          {
+            "format": "number",
+            "value": 0.3316533144562173
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Baseline",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.2825198660714286
+          },
+          "Fail"
+        ],
+        "\\addlinespace",
+        [
+          3,
+          "OLMo instruct",
+          "Positive",
+          "1/16",
+          {
+            "format": "number",
+            "value": 0.49428571428571433
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Zero",
+          "1/16",
+          {
+            "format": "number",
+            "value": 0.15000000000000002
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Negative",
+          "0/16",
+          {
+            "format": "number",
+            "value": null
+          },
+          "Fail"
+        ],
+        [
+          "",
+          "",
+          "Baseline",
+          "5/16",
+          {
+            "format": "number",
+            "value": 0.4056142857142858
+          },
+          "Fail"
+        ],
+        "\\addlinespace"
+      ]
+    },
+    {
+      "label": "tab:initial",
+      "rows": [
+        [
+          "Explicit",
+          "Redundant",
+          "240/240",
+          {
+            "format": "number",
+            "value": 1.8287408205138894e-06
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              -2.710832953732956e-06,
+              6.605243887015357e-06
+            ]
+          },
+          {
+            "format": "number",
+            "value": 1.3274157605544657e-05
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.00030000000000002247
+          }
+        ],
+        [
+          "Explicit",
+          "Independent",
+          "466/480",
+          {
+            "format": "number",
+            "value": 0.04228511772559414
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              0.026449561926955762,
+              0.05968106300516018
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.10017097738031631
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.5243347546656779,
+              0.4620674426611579
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.7
+          }
+        ],
+        [
+          "Explicit",
+          "Indep., agree",
+          "226/240",
+          {
+            "format": "number",
+            "value": 0.08203879446037263
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              0.055475340500611064,
+              0.11402580462041942
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.1025623085710224
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.5066849816849817,
+              0.43619963369963366
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.7
+          }
+        ],
+        [
+          "Explicit",
+          "Indep., conflict",
+          "240/240",
+          {
+            "format": "number",
+            "value": 0.005888781353463329
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              -0.012699146417315305,
+              0.02423912932433435
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.0979064694123442
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.5416666666666666,
+              0.4875
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.6147058823529411
+          }
+        ],
+        [
+          "Minimal",
+          "Redundant",
+          "239/240",
+          {
+            "format": "number",
+            "value": 0.001301120728322313
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              4.3743670169249394e-06,
+              0.0029448547798941256
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.001312150491275906
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.0125,
+              0.008333333333333333
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.14470000000000005
+          }
+        ],
+        [
+          "Minimal",
+          "Independent",
+          "452/480",
+          {
+            "format": "number",
+            "value": 0.03799563684107301
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              0.02356481635347697,
+              0.05447360068744375
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.0820740105417698
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.3805170863584842,
+              0.36534633765278923
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.590625
+          }
+        ],
+        [
+          "Minimal",
+          "Indep., agree",
+          "213/240",
+          {
+            "format": "number",
+            "value": 0.080745229128604
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              0.056101224797554784,
+              0.10792352937264578
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.083844472971172
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.3745875420875421,
+              0.34713804713804713
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.5786676470588236
+          }
+        ],
+        [
+          "Minimal",
+          "Indep., conflict",
+          "239/240",
+          {
+            "format": "number",
+            "value": 0.0014027277497694135
+          },
+          {
+            "format": "descriptive_interval",
+            "value": [
+              -0.010665231933982385,
+              0.013477333200539144
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.08109210580816957
+          },
+          {
+            "format": "percent_pair",
+            "value": [
+              0.385,
+              0.38083333333333336
+            ]
+          },
+          {
+            "format": "number",
+            "value": 0.590625
+          }
+        ]
+      ]
+    },
+    {
+      "label": "tab:initial-updates",
+      "rows": [
+        [
+          "Explicit",
+          "Redundant",
+          "Self",
+          "239/240",
+          {
+            "format": "number",
+            "value": -8.676463369807605e-07
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -8.676463369807605e-07
+          }
+        ],
+        [
+          "Explicit",
+          "Redundant",
+          "Other",
+          "239/240",
+          {
+            "format": "number",
+            "value": -2.7519427130501995e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -2.7519427130501995e-06
+          }
+        ],
+        [
+          "Explicit",
+          "Indep., agree",
+          "Self",
+          "227/240",
+          {
+            "format": "number",
+            "value": 0.019226214334775085
+          },
+          {
+            "format": "number",
+            "value": 0.12017106231579534
+          },
+          {
+            "format": "number",
+            "value": -0.10094484798102026
+          }
+        ],
+        [
+          "Explicit",
+          "Indep., agree",
+          "Other",
+          "237/240",
+          {
+            "format": "number",
+            "value": -0.06374916422517357
+          },
+          {
+            "format": "number",
+            "value": 0.11790266940262445
+          },
+          {
+            "format": "number",
+            "value": -0.18165183362779802
+          }
+        ],
+        [
+          "Explicit",
+          "Indep., conflict",
+          "Self",
+          "239/240",
+          {
+            "format": "number",
+            "value": 0.23699605172023888
+          },
+          {
+            "format": "number",
+            "value": 0.23283693565618688
+          },
+          {
+            "format": "number",
+            "value": 0.004159116064052038
+          }
+        ],
+        [
+          "Explicit",
+          "Indep., conflict",
+          "Other",
+          "239/240",
+          {
+            "format": "number",
+            "value": 0.23074715645979346
+          },
+          {
+            "format": "number",
+            "value": 0.23283693565618688
+          },
+          {
+            "format": "number",
+            "value": -0.002089779196393418
+          }
+        ],
+        [
+          "Minimal",
+          "Redundant",
+          "Self",
+          "238/240",
+          {
+            "format": "number",
+            "value": -4.691665786922028e-07
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -4.691665786922028e-07
+          }
+        ],
+        [
+          "Minimal",
+          "Redundant",
+          "Other",
+          "239/240",
+          {
+            "format": "number",
+            "value": -0.0013015621171232276
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -0.0013015621171232276
+          }
+        ],
+        [
+          "Minimal",
+          "Indep., agree",
+          "Self",
+          "219/240",
+          {
+            "format": "number",
+            "value": 0.12072107704314135
+          },
+          {
+            "format": "number",
+            "value": 0.1224339658036831
+          },
+          {
+            "format": "number",
+            "value": -0.001712888760541751
+          }
+        ],
+        [
+          "Minimal",
+          "Indep., agree",
+          "Other",
+          "228/240",
+          {
+            "format": "number",
+            "value": 0.04063135556176068
+          },
+          {
+            "format": "number",
+            "value": 0.12328772146686931
+          },
+          {
+            "format": "number",
+            "value": -0.08265636590510862
+          }
+        ],
+        [
+          "Minimal",
+          "Indep., conflict",
+          "Self",
+          "238/240",
+          {
+            "format": "number",
+            "value": 0.2263535254616071
+          },
+          {
+            "format": "number",
+            "value": 0.23272860483516386
+          },
+          {
+            "format": "number",
+            "value": -0.0063750793735567425
+          }
+        ],
+        [
+          "Minimal",
+          "Indep., conflict",
+          "Other",
+          "239/240",
+          {
+            "format": "number",
+            "value": 0.22543950808526367
+          },
+          {
+            "format": "number",
+            "value": 0.23283693565618688
+          },
+          {
+            "format": "number",
+            "value": -0.007397427570923201
+          }
+        ]
+      ]
+    },
+    {
+      "label": "tab:decomposition",
+      "rows": [
+        [
+          "Legacy",
+          "Frequency",
+          "Agreeing",
+          {
+            "format": "number",
+            "value": 2.3052235728754908e-05
+          },
+          {
+            "format": "number",
+            "value": 2.2189023954198204e-06
+          },
+          {
+            "format": "number",
+            "value": 2.0833333333335088e-05
+          },
+          {
+            "format": "number",
+            "value": 4.104313811813842e-05
+          },
+          {
+            "format": "number",
+            "value": 1.691506181116553e-05
+          }
+        ],
+        [
+          "Legacy",
+          "Frequency",
+          "Conflicting",
+          {
+            "format": "number",
+            "value": -4.625929269271485e-18
+          },
+          {
+            "format": "number",
+            "value": -4.625929269271485e-18
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 1.3877787807814457e-17
+          },
+          {
+            "format": "number",
+            "value": 1.3877787807814457e-17
+          }
+        ],
+        [
+          "Legacy",
+          "Likelihood",
+          "Agreeing",
+          {
+            "format": "number",
+            "value": -0.13863855157778576
+          },
+          {
+            "format": "number",
+            "value": -0.1712295895081094
+          },
+          {
+            "format": "number",
+            "value": 0.032591037930323655
+          },
+          {
+            "format": "number",
+            "value": 0.15238657154758545
+          },
+          {
+            "format": "number",
+            "value": 0.18094938487260673
+          }
+        ],
+        [
+          "Legacy",
+          "Likelihood",
+          "Conflicting",
+          {
+            "format": "number",
+            "value": 0.24604038238125617
+          },
+          {
+            "format": "number",
+            "value": 0.23168469518193205
+          },
+          {
+            "format": "number",
+            "value": 0.014355687199324124
+          },
+          {
+            "format": "number",
+            "value": 0.25570704904792285
+          },
+          {
+            "format": "number",
+            "value": 0.23501802851526535
+          }
+        ],
+        [
+          "Scoped",
+          "Frequency",
+          "Agreeing",
+          {
+            "format": "number",
+            "value": -0.027181163840107197
+          },
+          {
+            "format": "number",
+            "value": -0.04507336443093791
+          },
+          {
+            "format": "number",
+            "value": 0.01789220059083071
+          },
+          {
+            "format": "number",
+            "value": 0.02719063322556425
+          },
+          {
+            "format": "number",
+            "value": 0.04509105776215371
+          }
+        ],
+        [
+          "Scoped",
+          "Frequency",
+          "Conflicting",
+          {
+            "format": "number",
+            "value": -0.007243589743589748
+          },
+          {
+            "format": "number",
+            "value": 0.05023809523809523
+          },
+          {
+            "format": "number",
+            "value": -0.05748168498168498
+          },
+          {
+            "format": "number",
+            "value": 0.007243589743589757
+          },
+          {
+            "format": "number",
+            "value": 0.06357142857142857
+          }
+        ],
+        [
+          "Scoped",
+          "Likelihood",
+          "Agreeing",
+          {
+            "format": "number",
+            "value": -0.19348919326414174
+          },
+          {
+            "format": "number",
+            "value": -0.1892337021788187
+          },
+          {
+            "format": "number",
+            "value": -0.004255491085323026
+          },
+          {
+            "format": "number",
+            "value": 0.20121856550852554
+          },
+          {
+            "format": "number",
+            "value": 0.1969630744232025
+          }
+        ],
+        [
+          "Scoped",
+          "Likelihood",
+          "Conflicting",
+          {
+            "format": "number",
+            "value": 0.19657594523300434
+          },
+          {
+            "format": "number",
+            "value": 0.1912648355419548
+          },
+          {
+            "format": "number",
+            "value": 0.005311109691049529
+          },
+          {
+            "format": "number",
+            "value": 0.19657594523300434
+          },
+          {
+            "format": "number",
+            "value": 0.1912648355419548
+          }
+        ]
+      ]
+    },
+    {
+      "label": "tab:wording",
+      "rows": [
+        [
+          2,
+          "Qwen3",
+          "Scoped",
+          "Compatible",
+          "63/64",
+          {
+            "format": "number",
+            "value": -0.008810193819789081
+          },
+          {
+            "format": "number",
+            "value": 0.014034695293114139
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.02386640504807692,
+              -0.008241405048076925
+            ]
+          }
+        ],
+        [
+          2,
+          "Qwen3",
+          "Scoped",
+          "Restrictive",
+          "64/64",
+          {
+            "format": "number",
+            "value": 0.052154968697914764
+          },
+          {
+            "format": "number",
+            "value": 0.08180609687251793
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.05215496869791475,
+              0.05215496869791475
+            ]
+          }
+        ],
+        [
+          2,
+          "Qwen3",
+          "Legacy",
+          "Compatible",
+          "62/64",
+          {
+            "format": "number",
+            "value": 1.1858974358971551e-06
+          },
+          {
+            "format": "number",
+            "value": 9.751602564101732e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.01562391826923077,
+              0.01562608173076923
+            ]
+          }
+        ],
+        [
+          2,
+          "Qwen3",
+          "Legacy",
+          "Restrictive",
+          "64/64",
+          {
+            "format": "number",
+            "value": 0.019135692785787986
+          },
+          {
+            "format": "number",
+            "value": 0.04025602398097789
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.01913569278578799,
+              0.01913569278578799
+            ]
+          }
+        ],
+        "\\addlinespace",
+        [
+          3,
+          "Qwen3",
+          "Scoped",
+          "Compatible",
+          "95/96",
+          {
+            "format": "number",
+            "value": -7.992697916666637e-06
+          },
+          {
+            "format": "number",
+            "value": 9.715635416666625e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.010387680406249999,
+              2.898626041666734e-05
+            ]
+          }
+        ],
+        [
+          3,
+          "Qwen3",
+          "Scoped",
+          "Restrictive",
+          "96/96",
+          {
+            "format": "number",
+            "value": -0.00963346644628194
+          },
+          {
+            "format": "number",
+            "value": 0.039747349834661445
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.009633466446281942,
+              -0.009633466446281942
+            ]
+          }
+        ],
+        [
+          3,
+          "Qwen3",
+          "Legacy",
+          "Compatible",
+          "95/96",
+          {
+            "format": "number",
+            "value": -9.270833333331691e-06
+          },
+          {
+            "format": "number",
+            "value": 1.135416666666942e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.0003842708333333285,
+              0.010032395833333329
+            ]
+          }
+        ],
+        [
+          3,
+          "Qwen3",
+          "Legacy",
+          "Restrictive",
+          "96/96",
+          {
+            "format": "number",
+            "value": 0.011741889615745278
+          },
+          {
+            "format": "number",
+            "value": 0.01340317652360296
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.01174188961574528,
+              0.01174188961574528
+            ]
+          }
+        ],
+        "\\addlinespace",
+        [
+          3,
+          "Qwen3.5",
+          "Scoped",
+          "Compatible",
+          "76/96",
+          {
+            "format": "number",
+            "value": 6.386304263949948e-09
+          },
+          {
+            "format": "number",
+            "value": 8.720009561794312e-09
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.103885365397942,
+              0.11486463460205802
+            ]
+          }
+        ],
+        [
+          3,
+          "Qwen3.5",
+          "Scoped",
+          "Restrictive",
+          "76/96",
+          {
+            "format": "number",
+            "value": -1.0059470158556155e-07
+          },
+          {
+            "format": "number",
+            "value": 1.179687612865067e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.13905377858374687,
+              0.12136288808291978
+            ]
+          }
+        ],
+        [
+          3,
+          "Qwen3.5",
+          "Legacy",
+          "Compatible",
+          "84/96",
+          {
+            "format": "number",
+            "value": 1.2393845277469883e-07
+          },
+          {
+            "format": "number",
+            "value": 2.5265365759890545e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.0673554266802967,
+              0.06806123998636995
+            ]
+          }
+        ],
+        [
+          3,
+          "Qwen3.5",
+          "Legacy",
+          "Restrictive",
+          "70/96",
+          {
+            "format": "number",
+            "value": -1.517444016272053e-07
+          },
+          {
+            "format": "number",
+            "value": 1.5802141998239466e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.17444337837494386,
+              0.16930662162505614
+            ]
+          }
+        ],
+        "\\addlinespace"
+      ]
+    },
+    {
+      "label": "tab:hidden-second",
+      "rows": [
+        [
+          "Qwen3",
+          "Positive / self",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.22918860293933824
+          },
+          {
+            "format": "number",
+            "value": 0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": -8.532923600975545e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -8.532923600937381e-06,
+              -8.532923600937381e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / self",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.22919255114909365
+          },
+          {
+            "format": "number",
+            "value": 0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": -4.584713845543625e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -4.584713845526278e-06,
+              -4.584713845526278e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / other",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.22919117646874998
+          },
+          {
+            "format": "number",
+            "value": 0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": -5.959394189212347e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -5.959394189201939e-06,
+              -5.959394189201939e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / other",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.22919485146875
+          },
+          {
+            "format": "number",
+            "value": 0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": -2.2843941892107533e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -2.284394189255856e-06,
+              -2.284394189255856e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / neutral",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.22918604044117646
+          },
+          {
+            "format": "number",
+            "value": 0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": -1.1095421762738478e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -1.1095421762818275e-05,
+              -1.1095421762818275e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / neutral",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.2291948529375
+          },
+          {
+            "format": "number",
+            "value": 0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": -2.2829254392141285e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -2.282925439210659e-06,
+              -2.282925439210659e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / self",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / self",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              3.469446951953614e-18,
+              3.469446951953614e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / other",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / other",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              3.469446951953614e-18,
+              3.469446951953614e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / neutral",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              6.938893903907228e-18,
+              6.938893903907228e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / neutral",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / self",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": -0.22918551690992645
+          },
+          {
+            "format": "number",
+            "value": -0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": 1.161895301273353e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              1.1618953012708377e-05,
+              1.1618953012708377e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / self",
+          "Record",
+          "15/16",
+          {
+            "format": "number",
+            "value": -0.239170017955517
+          },
+          {
+            "format": "number",
+            "value": -0.2391980593092408
+          },
+          {
+            "format": "number",
+            "value": 2.80413537238146e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.0020329138155294833,
+              0.060467086184470525
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / other",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": -0.22919485146875
+          },
+          {
+            "format": "number",
+            "value": -0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": 2.2843941892107533e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              2.284394189193406e-06,
+              2.284394189193406e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / other",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": -0.22918860293937499
+          },
+          {
+            "format": "number",
+            "value": -0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": 8.532923564213285e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              8.532923564293082e-06,
+              8.532923564293082e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / neutral",
+          "Direct",
+          "16/16",
+          {
+            "format": "number",
+            "value": -0.22918971690808823
+          },
+          {
+            "format": "number",
+            "value": -0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": 7.4189548509781544e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              7.41895485102239e-06,
+              7.41895485102239e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / neutral",
+          "Record",
+          "16/16",
+          {
+            "format": "number",
+            "value": -0.22867242646874997
+          },
+          {
+            "format": "number",
+            "value": -0.22919713586293922
+          },
+          {
+            "format": "number",
+            "value": 0.0005247093941892107
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.0005247093941891864,
+              0.0005247093941891864
+            ]
+          }
+        ],
+        "\\addlinespace"
+      ]
+    },
+    {
+      "label": "tab:hidden-third",
+      "rows": [
+        [
+          "Qwen3",
+          "Positive / self",
+          "Frequency",
+          "23/24",
+          {
+            "format": "number",
+            "value": 0.24194166666666664
+          },
+          {
+            "format": "number",
+            "value": 0.24194152134322663
+          },
+          {
+            "format": "number",
+            "value": 1.4532344004192378e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.036783810281956306,
+              0.004882856384710362
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / self",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.2390958333333333
+          },
+          {
+            "format": "number",
+            "value": 0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": -4.769486229369799e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -4.769486229294628e-07,
+              -4.769486229294628e-07
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / other",
+          "Frequency",
+          "23/24",
+          {
+            "format": "number",
+            "value": 0.23797269444444444
+          },
+          {
+            "format": "number",
+            "value": 0.23797446633647726
+          },
+          {
+            "format": "number",
+            "value": -1.7718920328487702e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.012451393615289689,
+              0.029215273051376976
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / other",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.23909999999999998
+          },
+          {
+            "format": "number",
+            "value": 0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": 3.689718043724602e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              3.6897180437783783e-06,
+              3.6897180437783783e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / neutral",
+          "Frequency",
+          "22/24",
+          {
+            "format": "number",
+            "value": 0.25063380555555553
+          },
+          {
+            "format": "number",
+            "value": 0.2506346393622249
+          },
+          {
+            "format": "number",
+            "value": -8.338066693781378e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.07832222694862295,
+              0.005011106384710383
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive / neutral",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.2390958333333333
+          },
+          {
+            "format": "number",
+            "value": 0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": -4.769486229358235e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -4.76948622915585e-07,
+              -4.76948622915585e-07
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / self",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -6.938893903907228e-18,
+              -6.938893903907228e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / self",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -6.938893903907228e-18,
+              -6.938893903907228e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / other",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -2.0816681711721685e-17,
+              -2.0816681711721685e-17
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / other",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / neutral",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              4.85722573273506e-17,
+              4.85722573273506e-17
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero / neutral",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              4.163336342344337e-17,
+              4.163336342344337e-17
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / self",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": -0.23906991666666666
+          },
+          {
+            "format": "number",
+            "value": -0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": 2.6393615289606435e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              2.6393615289665995e-05,
+              2.6393615289665995e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / self",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": -0.2390865853666667
+          },
+          {
+            "format": "number",
+            "value": -0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": 9.72491528960541e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              9.724915289666125e-06,
+              9.724915289666125e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / other",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": -0.23908333333333331
+          },
+          {
+            "format": "number",
+            "value": -0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": 1.297694862294023e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              1.2976948622879514e-05,
+              1.2976948622879514e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / other",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": -0.23900325
+          },
+          {
+            "format": "number",
+            "value": -0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": 9.306028195627039e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              9.306028195626287e-05,
+              9.306028195626287e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / neutral",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": -0.23910741666666666
+          },
+          {
+            "format": "number",
+            "value": -0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": -1.1106384710391748e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -1.1106384710299518e-05,
+              -1.1106384710299518e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative / neutral",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": -0.23908277874999997
+          },
+          {
+            "format": "number",
+            "value": -0.23909631028195624
+          },
+          {
+            "format": "number",
+            "value": 1.3531531956270776e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              1.3531531956309517e-05,
+              1.3531531956309517e-05
+            ]
+          }
+        ],
+        "\\addlinespace",
+        [
+          "Qwen3.5",
+          "Positive / self",
+          "Frequency",
+          "19/24",
+          {
+            "format": "number",
+            "value": 0.23819304366174152
+          },
+          {
+            "format": "number",
+            "value": 0.23819303325641927
+          },
+          {
+            "format": "number",
+            "value": 1.0405322227111102e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.15345840256137847,
+              0.054874930771954836
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive / self",
+          "Likelihood",
+          "23/24",
+          {
+            "format": "number",
+            "value": 0.24951284245265135
+          },
+          {
+            "format": "number",
+            "value": 0.24951279541674595
+          },
+          {
+            "format": "number",
+            "value": 4.703590540454691e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.04088618258734031,
+              0.0007804840793263386
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive / other",
+          "Frequency",
+          "21/24",
+          {
+            "format": "number",
+            "value": 0.22378132103600135
+          },
+          {
+            "format": "number",
+            "value": 0.22378132155516198
+          },
+          {
+            "format": "number",
+            "value": -5.191606357775788e-10
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.06052964483070329,
+              0.0644703551692967
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive / other",
+          "Likelihood",
+          "18/24",
+          {
+            "format": "number",
+            "value": 0.23807319716725006
+          },
+          {
+            "format": "number",
+            "value": 0.23807317161802374
+          },
+          {
+            "format": "number",
+            "value": 2.5549226315416735e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.1770179735415267,
+              0.07298202645847329
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive / neutral",
+          "Frequency",
+          "22/24",
+          {
+            "format": "number",
+            "value": 0.2324744778608746
+          },
+          {
+            "format": "number",
+            "value": 0.23247443957416028
+          },
+          {
+            "format": "number",
+            "value": 3.8286714311865863e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.04428773403080386,
+              0.03904559930252947
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive / neutral",
+          "Likelihood",
+          "20/24",
+          {
+            "format": "number",
+            "value": 0.2268365997845687
+          },
+          {
+            "format": "number",
+            "value": 0.22683659639297968
+          },
+          {
+            "format": "number",
+            "value": 3.3915890015427208e-09
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.11688955812833142,
+              0.049777108538335196
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero / self",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -6.938893903907228e-18,
+              -6.938893903907228e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero / self",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -6.938893903907228e-18,
+              -6.938893903907228e-18
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero / other",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -2.0816681711721685e-17,
+              -2.0816681711721685e-17
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero / other",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero / neutral",
+          "Frequency",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              4.85722573273506e-17,
+              4.85722573273506e-17
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero / neutral",
+          "Likelihood",
+          "24/24",
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "bounds",
+            "value": [
+              4.163336342344337e-17,
+              4.163336342344337e-17
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative / self",
+          "Frequency",
+          "20/24",
+          {
+            "format": "number",
+            "value": -0.2321464224551101
+          },
+          {
+            "format": "number",
+            "value": -0.23214622779507296
+          },
+          {
+            "format": "number",
+            "value": -1.9466003716424162e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.05375951796832456,
+              0.11290714869834209
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative / self",
+          "Likelihood",
+          "20/24",
+          {
+            "format": "number",
+            "value": -0.24196972909574432
+          },
+          {
+            "format": "number",
+            "value": -0.2419696929029449
+          },
+          {
+            "format": "number",
+            "value": -3.619279939463815e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.036807339786415504,
+              0.12985932688025112
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative / other",
+          "Frequency",
+          "21/24",
+          {
+            "format": "number",
+            "value": -0.24184987400471977
+          },
+          {
+            "format": "number",
+            "value": -0.24184983126454937
+          },
+          {
+            "format": "number",
+            "value": -4.274017040843373e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.029054117290333574,
+              0.09594588270966643
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative / other",
+          "Likelihood",
+          "18/24",
+          {
+            "format": "number",
+            "value": -0.2238095461372049
+          },
+          {
+            "format": "number",
+            "value": -0.2238094931148803
+          },
+          {
+            "format": "number",
+            "value": -5.302232462002047e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.086565579385262,
+              0.163434420614738
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative / neutral",
+          "Frequency",
+          "18/24",
+          {
+            "format": "number",
+            "value": -0.23044082581942107
+          },
+          {
+            "format": "number",
+            "value": -0.23044081545974968
+          },
+          {
+            "format": "number",
+            "value": -1.035967139831494e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.06682141512198964,
+              0.18317858487801034
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative / neutral",
+          "Likelihood",
+          "22/24",
+          {
+            "format": "number",
+            "value": -0.2324744810887024
+          },
+          {
+            "format": "number",
+            "value": -0.23247443957416028
+          },
+          {
+            "format": "number",
+            "value": -4.151454209508817e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.039045600161268554,
+              0.04428773317206476
+            ]
+          }
+        ],
+        "\\addlinespace"
+      ]
+    },
+    {
+      "label": "tab:visible-second",
+      "rows": [
+        [
+          "Qwen3",
+          "Positive",
+          "Self",
+          "26/32",
+          {
+            "format": "number",
+            "value": 3.5316730769243177e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 3.5316730769243177e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.06389841728125001,
+              0.12360158271874998
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive",
+          "Other",
+          "29/32",
+          {
+            "format": "number",
+            "value": -1.2439367669686137e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -1.2439367669686137e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.013104362500937501,
+              0.0806456374990625
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive",
+          "Neutral",
+          "27/32",
+          {
+            "format": "number",
+            "value": 3.1005384615355136e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 3.1005384615355136e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.06113001757812501,
+              0.095119982421875
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero",
+          "Self",
+          "64/64",
+          {
+            "format": "number",
+            "value": -2.7573529405924835e-09
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -2.7573529405924835e-09
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -2.757352937773558e-09,
+              -2.757352937773558e-09
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero",
+          "Other",
+          "64/64",
+          {
+            "format": "number",
+            "value": 0.00959418474219669
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 0.00959418474219669
+          },
+          {
+            "format": "bounds",
+            "value": [
+              0.009594184742196686,
+              0.009594184742196686
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero",
+          "Neutral",
+          "63/64",
+          {
+            "format": "number",
+            "value": -0.00013741814516129048
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -0.00013741814516129048
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.01524674687500001,
+              0.0003782531250000054
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative",
+          "Self",
+          "30/32",
+          {
+            "format": "number",
+            "value": -1.999236476344061e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -1.999236476344061e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.040460215306060594,
+              0.022039784693939402
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative",
+          "Other",
+          "31/32",
+          {
+            "format": "number",
+            "value": -7.343566171824634e-10
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -7.343566171824634e-10
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.028481250734356624,
+              0.0027687492656433836
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative",
+          "Neutral",
+          "31/32",
+          {
+            "format": "number",
+            "value": -1.5650315870094357e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -1.5650315870094357e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.028496066982536747,
+              0.0027539330174632393
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Indep.",
+          "Self",
+          "63/64",
+          {
+            "format": "number",
+            "value": 0.179212908266129
+          },
+          {
+            "format": "number",
+            "value": 0.19062241223000548
+          },
+          {
+            "format": "number",
+            "value": -0.011409503963876437
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.026465490965378497,
+              -0.0108404909653785
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Indep.",
+          "Other",
+          "64/64",
+          {
+            "format": "number",
+            "value": 0.1864993737980769
+          },
+          {
+            "format": "number",
+            "value": 0.1890984597153785
+          },
+          {
+            "format": "number",
+            "value": -0.002599085917301584
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.0025990859173015794,
+              -0.0025990859173015794
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Indep.",
+          "Neutral",
+          "64/64",
+          {
+            "format": "number",
+            "value": 0.186500265625
+          },
+          {
+            "format": "number",
+            "value": 0.1890984597153785
+          },
+          {
+            "format": "number",
+            "value": -0.002598194090378508
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.0025981940903784606,
+              -0.0025981940903784606
+            ]
+          }
+        ],
+        "\\addlinespace"
+      ]
+    },
+    {
+      "label": "tab:visible-third",
+      "rows": [
+        [
+          "Qwen3",
+          "Positive",
+          "Self",
+          "37/48",
+          {
+            "format": "number",
+            "value": 3.893055555555154e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 3.893055555555154e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.05088079166666666,
+              0.17828587500000004
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive",
+          "Other",
+          "39/48",
+          {
+            "format": "number",
+            "value": 9.8467361111078e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 9.8467361111078e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.04670909770833334,
+              0.1407909022916667
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Positive",
+          "Neutral",
+          "35/48",
+          {
+            "format": "number",
+            "value": 7.426253387533932e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 7.426253387533932e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.06722633434959349,
+              0.20360699898373988
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero",
+          "Self",
+          "96/96",
+          {
+            "format": "number",
+            "value": -3.76656504065045e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -3.76656504065045e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -3.766565040650913e-05,
+              -3.766565040650913e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero",
+          "Other",
+          "96/96",
+          {
+            "format": "number",
+            "value": 1.577083333333447e-05
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 1.577083333333447e-05
+          },
+          {
+            "format": "bounds",
+            "value": [
+              1.5770833333344407e-05,
+              1.5770833333344407e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Zero",
+          "Neutral",
+          "96/96",
+          {
+            "format": "number",
+            "value": 9.604166666664671e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 9.604166666664671e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              9.60416666668032e-06,
+              9.60416666668032e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative",
+          "Self",
+          "46/48",
+          {
+            "format": "number",
+            "value": -4.13690476190289e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -4.13690476190289e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.026676458333333312,
+              0.014990208333333331
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative",
+          "Other",
+          "47/48",
+          {
+            "format": "number",
+            "value": -9.501017073173327e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -9.501017073173327e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.006234501017073166,
+              0.01459883231626017
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Negative",
+          "Neutral",
+          "46/48",
+          {
+            "format": "number",
+            "value": -1.0823166666600207e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -1.0823166666600207e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.02164170731666665,
+              0.02002495935000001
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Indep.",
+          "Self",
+          "87/96",
+          {
+            "format": "number",
+            "value": 0.19026721027827379
+          },
+          {
+            "format": "number",
+            "value": 0.19026644218068867
+          },
+          {
+            "format": "number",
+            "value": 7.680975851380573e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.01037934178838548,
+              3.732487828120136e-05
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Indep.",
+          "Other",
+          "94/96",
+          {
+            "format": "number",
+            "value": 0.18454935416666665
+          },
+          {
+            "format": "number",
+            "value": 0.18454079053433536
+          },
+          {
+            "format": "number",
+            "value": 8.563632331285256e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              8.338617864396027e-06,
+              8.338617864396027e-06
+            ]
+          }
+        ],
+        [
+          "Qwen3",
+          "Indep.",
+          "Neutral",
+          "92/96",
+          {
+            "format": "number",
+            "value": 0.1844994464285714
+          },
+          {
+            "format": "number",
+            "value": 0.18449273630561056
+          },
+          {
+            "format": "number",
+            "value": 6.7101229608691115e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              6.213617864392661e-06,
+              6.213617864392661e-06
+            ]
+          }
+        ],
+        "\\addlinespace",
+        [
+          "Qwen3.5",
+          "Positive",
+          "Self",
+          "34/48",
+          {
+            "format": "number",
+            "value": 7.708430700670463e-09
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 7.708430700670463e-09
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.18457501052361663,
+              0.16959165614305008
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive",
+          "Other",
+          "34/48",
+          {
+            "format": "number",
+            "value": -1.8017472501425135e-08
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -1.8017472501425135e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.19968369892925023,
+              0.17531630107074975
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Positive",
+          "Neutral",
+          "32/48",
+          {
+            "format": "number",
+            "value": 3.023129593399066e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 3.023129593399066e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.19890139090644268,
+              0.1760986090935574
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero",
+          "Self",
+          "54/96",
+          {
+            "format": "number",
+            "value": -3.1443074762077134e-09
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -3.1443074762077134e-09
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.12447055898816717,
+              0.16719610767849943
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero",
+          "Other",
+          "56/96",
+          {
+            "format": "number",
+            "value": 2.1049935277477874e-09
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 2.1049935277477874e-09
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.17995600791467162,
+              0.1325439920853283
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Zero",
+          "Neutral",
+          "47/96",
+          {
+            "format": "number",
+            "value": 1.4127402281407615e-06
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 1.4127402281407615e-06
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.19730927940774523,
+              0.18810738725892123
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative",
+          "Self",
+          "36/48",
+          {
+            "format": "number",
+            "value": 2.0334132375121605e-07
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 2.0334132375121605e-07
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.16023833077878136,
+              0.1314283358878853
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative",
+          "Other",
+          "38/48",
+          {
+            "format": "number",
+            "value": 3.519039763168725e-08
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": 3.519039763168725e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.10063552720428728,
+              0.14936447279571266
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Negative",
+          "Neutral",
+          "34/48",
+          {
+            "format": "number",
+            "value": -3.413442870933108e-08
+          },
+          {
+            "format": "number",
+            "value": 0.0
+          },
+          {
+            "format": "number",
+            "value": -3.413442870933108e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.1647314557884077,
+              0.21026854421159233
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Indep.",
+          "Self",
+          "68/96",
+          {
+            "format": "number",
+            "value": 0.17295038382053318
+          },
+          {
+            "format": "number",
+            "value": 0.17295044236012821
+          },
+          {
+            "format": "number",
+            "value": -5.853959500826048e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.07173461550798846,
+              0.011598717825344813
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Indep.",
+          "Other",
+          "57/96",
+          {
+            "format": "number",
+            "value": 0.18679171912349538
+          },
+          {
+            "format": "number",
+            "value": 0.18679176389971286
+          },
+          {
+            "format": "number",
+            "value": -4.4776217471077615e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.10326591677671317,
+              0.03215074988995338
+            ]
+          }
+        ],
+        [
+          "Qwen3.5",
+          "Indep.",
+          "Neutral",
+          "71/96",
+          {
+            "format": "number",
+            "value": 0.18044864650659273
+          },
+          {
+            "format": "number",
+            "value": 0.1804486029063104
+          },
+          {
+            "format": "number",
+            "value": 4.360028233310943e-08
+          },
+          {
+            "format": "bounds",
+            "value": [
+              -0.09271184356501118,
+              0.021871489768322094
+            ]
+          }
+        ],
+        "\\addlinespace"
+      ]
+    },
+    {
+      "label": "tab:thinking",
+      "rows": [
+        [
+          2,
+          "Qwen3 thinking",
+          "Empty",
+          50,
+          50,
+          {
+            "format": "number",
+            "value": 0.16538454853310613
+          }
+        ],
+        [
+          2,
+          "Qwen3 thinking",
+          "Nonempty",
+          1751,
+          1751,
+          {
+            "format": "number",
+            "value": 0.002210841334471035
+          }
+        ],
+        [
+          2,
+          "Qwen3 thinking",
+          "Unclosed",
+          23,
+          0,
+          {
+            "format": "number",
+            "value": null
+          }
+        ],
+        [
+          3,
+          "Qwen3 thinking",
+          "Empty",
+          209,
+          209,
+          {
+            "format": "number",
+            "value": 0.20176229670178625
+          }
+        ],
+        [
+          3,
+          "Qwen3 thinking",
+          "Nonempty",
+          2475,
+          2475,
+          {
+            "format": "number",
+            "value": 4.736274263880655e-05
+          }
+        ],
+        [
+          3,
+          "Qwen3 thinking",
+          "Unclosed",
+          52,
+          0,
+          {
+            "format": "number",
+            "value": null
+          }
+        ],
+        [
+          3,
+          "Qwen3.5 thinking",
+          "Nonempty",
+          2228,
+          2220,
+          {
+            "format": "number",
+            "value": 2.8200135935405407e-07
+          }
+        ],
+        [
+          3,
+          "Qwen3.5 thinking",
+          "Unclosed",
+          508,
+          0,
+          {
+            "format": "number",
+            "value": null
+          }
+        ]
+      ]
+    }
+  ]
+}

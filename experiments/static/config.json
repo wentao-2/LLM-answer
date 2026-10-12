@@ -1,0 +1,78 @@
+{
+  "name": "formal-4gpu-recovery",
+  "phase": "formal",
+  "seed": 1601,
+  "manifest": "manifest.jsonl",
+  "batch_size": 4,
+  "cpu_threads": 8,
+  "dtype": "bfloat16",
+  "do_sample": false,
+  "num_beams": 1,
+  "max_input_tokens": 1536,
+  "max_new_tokens": 8192,
+  "attention": "sdpa",
+  "analysis_script": "analyze_formal.py",
+  "stall_timeout_sec": 5400,
+  "models": [
+    {
+      "name": "qwen3-8b-thinking",
+      "path": "/workspace/models/Qwen/Qwen3-8B",
+      "mode": "thinking-explicit-true-final-json",
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    {
+      "name": "qwen3-8b",
+      "path": "/workspace/models/Qwen/Qwen3-8B",
+      "mode": "nonthinking-explicit-false-direct-json",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "name": "qwen25-14b-instruct",
+      "path": "/workspace/models/Qwen/Qwen2.5-14B-Instruct",
+      "mode": "instruct-direct-json",
+      "chat_template_kwargs": {}
+    }
+  ],
+  "parallel": {
+    "shards": [
+      {
+        "name": "shard-0",
+        "run_dir": "shards/shard-0",
+        "gpu": 0
+      },
+      {
+        "name": "shard-1",
+        "run_dir": "shards/shard-1",
+        "gpu": 1
+      },
+      {
+        "name": "shard-2",
+        "run_dir": "shards/shard-2",
+        "gpu": 2
+      },
+      {
+        "name": "shard-3",
+        "run_dir": "shards/shard-3",
+        "gpu": 3
+      }
+    ],
+    "max_failures": 3,
+    "stall_timeout_sec": 5400,
+    "backup_interval_sec": 300,
+    "allowed_host": {
+      "hostname": "autodl-container-d12344b553-8a0fa340",
+      "boot_id": "9cdbe507-068d-4757-8c81-7dab6e800173"
+    }
+  },
+  "migration": {
+    "source_run": "/workspace/i16-self-evidence/runs/formal-confirmation",
+    "snapshot": "previous.results.sqlite",
+    "inherited_rows": 800,
+    "snapshot_sha256": "3f5300fd9ad4ed3e99810f798585708633d73b9c0afa0c17df2312c444598fa9",
+    "record_sha256": "a67e748d704d7c55e25ce48567af509b5bcdf48a607ec6fa4635da509ac2e26e"
+  }
+}

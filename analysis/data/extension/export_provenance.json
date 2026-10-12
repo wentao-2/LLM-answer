@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "exporter_sha256": "e2f2f41bdaaad33a52fb2a4dd2c0abdd30f0fb6e42965a73215e8f159640db57",
+  "sources": [
+    {
+      "role": "qualification",
+      "file": "qwen-gate.json",
+      "sha256": "118e2df6941850d323e5cdc7e513adf9b21bfc91c812ee4bdfb33f6f948f22b0"
+    },
+    {
+      "role": "qualification",
+      "file": "nemo-gate.json",
+      "sha256": "90cf1d8b0991dde607454049dc8cb7fa30e46f7342bcd28b4bb2fbf576be7f11"
+    },
+    {
+      "role": "qualification",
+      "file": "phi4-gate.json",
+      "sha256": "4f64ec58936b0c47650666c2e2a395484e264e1cb09c0489d783e699a8761ae9"
+    },
+    {
+      "role": "history_stage1",
+      "file": "qwen-history-stage1.json",
+      "sha256": "44e72364d1134618dd34e29e678327a710af34c1483fd3ee4af0b11eb2f28171",
+      "manifest_sha256": "faf1584d4f0a93010947f7cae0c79d65fd162fde18838d04a9c4cfaab8cea08a",
+      "database_sha256": "cbf953f0e2b2034ec0a724ef5738c7e1ce3b6176bf58449d0a3e5156dd3c2662"
+    },
+    {
+      "role": "history_stage2",
+      "file": "qwen-history-stage2.json",
+      "sha256": "42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391",
+      "manifest_sha256": "06508e45cc173f5cd3eb64a727001dbe1bef843c2eca40e947411fb58a0ac715",
+      "database_sha256": "8f8012e9af1250702e7296ff94e35984a0bdc9f53468b4cbd6ee07964b9c82e5"
+    },
+    {
+      "role": "history_cohort",
+      "file": "history-cohort.json",
+      "sha256": "a61335ea59cf38715c475c9e53bcf92fcb8767fa6c99cfe1c417dc87634f7cf4"
+    },
+    {
+      "role": "native_factorial",
+      "file": "qwen-native-factorial.json",
+      "sha256": "bcd2e590d9a98437df18509df3b28c27fc20420ec564ec96ca669605c216af7b",
+      "manifest_sha256": "1e68cd0c6ac561de6c3024ea8b80d919c86e816617c52bae40c832fb62588108",
+      "database_sha256": "8f8012e9af1250702e7296ff94e35984a0bdc9f53468b4cbd6ee07964b9c82e5"
+    },
+    {
+      "role": "native_manifest",
+      "file": "native-factorial.jsonl",
+      "sha256": "1e68cd0c6ac561de6c3024ea8b80d919c86e816617c52bae40c832fb62588108"
+    },
+    {
+      "role": "native_database",
+      "file": "merged.sqlite",
+      "sha256": "8f8012e9af1250702e7296ff94e35984a0bdc9f53468b4cbd6ee07964b9c82e5"
+    },
+    {
+      "role": "frozen_source",
+      "file": "analyze_extension.py",
+      "sha256": "c80073264cee768051ecf7b3a2a501172ce1b5eae9d2c9e39f5c59369f57eef5"
+    },
+    {
+      "role": "frozen_source",
+      "file": "build_extension.py",
+      "sha256": "506a4b7707f42fcf4bad755b8af6e56246e92cbf9a05237037abf3bdafb20437"
+    },
+    {
+      "role": "complete_contrast_export",
+      "file": "qwen-history-stage2.json",
+      "sha256": "42f6d4a161a33ad7fb49255246af52180a6730b8218466abc90b561473766391",
+      "manifest_sha256": "06508e45cc173f5cd3eb64a727001dbe1bef843c2eca40e947411fb58a0ac715",
+      "database_sha256": "8f8012e9af1250702e7296ff94e35984a0bdc9f53468b4cbd6ee07964b9c82e5"
+    },
+    {
+      "role": "complete_contrast_export",
+      "file": "qwen-native-factorial.json",
+      "sha256": "bcd2e590d9a98437df18509df3b28c27fc20420ec564ec96ca669605c216af7b",
+      "manifest_sha256": "1e68cd0c6ac561de6c3024ea8b80d919c86e816617c52bae40c832fb62588108",
+      "database_sha256": "8f8012e9af1250702e7296ff94e35984a0bdc9f53468b4cbd6ee07964b9c82e5"
+    }
+  ],
+  "inputs_unchanged": true,
+  "rounding": {
+    "csv": "Unrounded round-trip floats; summary_json retains complete original contrast objects",
+    "latex_decimal_places": 4
+  },
+  "native_aggregation": {
+    "keys": [
+      "model",
+      "native_mode",
+      "output_instruction",
+      "budget",
+      "protocol"
+    ],
+    "function": "Frozen describe(snapshot(...)) grouped by the listed keys",
+    "weighting": "Equal family weights among valid records within each configuration and protocol",
+    "estimand_distinction": "Configuration description uses its own valid records. Factorial contrasts require complete sets of 16 cells.",
+    "post_generation_grouping_used": false
+  },
+  "history_count_aggregation": "Sum disjoint frozen conditions within each history arm and protocol. No condition MAE means are averaged.",
+  "rows": {
+    "qualification_groups.csv": 11,
+    "history_parents.csv": 1,
+    "history_arms.csv": 4,
+    "history_evidence_coverage.csv": 12,
+    "native_configurations.csv": 16,
+    "native_condition_details.csv": 64,
+    "complete_contrasts.csv": 288
+  },
+  "outputs": [
+    {
+      "file": "qualification_groups.csv",
+      "sha256": "a8245686a4c59366b20ce41c3eb03815ed65bae34597957cac6c1f000c82debe"
+    },
+    {
+      "file": "history_parents.csv",
+      "sha256": "ea49b6f18d66527f9d41d26ab9b8d1e505d4b04205f2702bbe29dc67819dd184"
+    },
+    {
+      "file": "history_arms.csv",
+      "sha256": "daac0a90f66c93663ab7ac365e8b7b222e0a2d9fa4a51c399c91f80911600682"
+    },
+    {
+      "file": "history_evidence_coverage.csv",
+      "sha256": "50fd3316ab9176e1dfa29388938914d3d3818e8ea80d622aaf43071044666aaa"
+    },
+    {
+      "file": "native_configurations.csv",
+      "sha256": "a89c34714813af3b33081c2875a1c088adff26c480423b685295acbf9f329144"
+    },
+    {
+      "file": "native_condition_details.csv",
+      "sha256": "86f96f19e5aa7edc9096a0c381e51298df7493d18e967a4d58c3c40e9801b0f9"
+    },
+    {
+      "file": "complete_contrasts.csv",
+      "sha256": "e9f8f2261e2ebd8b6a5f466395833e11d930176c5ad1eb2093a7d944ec803877"
+    },
+    {
+      "file": "extension_results_generated.tex",
+      "sha256": "53aae0dc4020911b2bf02c5038ea9f49e3957e968a63cfa91c697bf2aee4968b"
+    }
+  ]
+}

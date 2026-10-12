@@ -1,0 +1,266 @@
+{
+  "input_sha256": "778f442fc19137dfa017fee6a851704e6317ed01cbafee23997a8291749822d3",
+  "interval": "range of six family means, not a confidence interval",
+  "points": [
+    {
+      "history_arm": "native_self",
+      "condition": "original",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9988624946313803,
+      "family_range": [
+        0.9960837496595003,
+        1.001361179639445
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "original",
+      "branch": "independent_agree",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9989038359602562,
+      "family_range": [
+        0.9964122784025103,
+        1.001361179639445
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "original",
+      "branch": "independent_conflict",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.999619839864553,
+      "family_range": [
+        0.9989918050804945,
+        1.0004392331277883
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "general_bayes",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9987917063242253,
+      "family_range": [
+        0.9957065978360393,
+        1.001361179639445
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "general_bayes",
+      "branch": "independent_agree",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9989300784841958,
+      "family_range": [
+        0.9964122784025103,
+        1.0016003742333113
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "general_bayes",
+      "branch": "independent_conflict",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.999619839864553,
+      "family_range": [
+        0.9989918050804945,
+        1.0004392331277883
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "source_structure",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9988058910200921,
+      "family_range": [
+        0.9960433916448709,
+        1.0011732520511307
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "source_structure",
+      "branch": "independent_agree",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9989566938253402,
+      "family_range": [
+        0.9964122784025103,
+        1.0017600662801782
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "source_structure",
+      "branch": "independent_conflict",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.999619839864553,
+      "family_range": [
+        0.9989918050804945,
+        1.0004392331277883
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "original",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.28599955538424565,
+      "family_range": [
+        0.24976231314674488,
+        0.37470103069071886
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "original",
+      "branch": "independent_agree",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9990377425226791,
+      "family_range": [
+        0.9964122784025103,
+        1.0021589529209114
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "original",
+      "branch": "independent_conflict",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.999619839864553,
+      "family_range": [
+        0.9989918050804945,
+        1.0004392331277883
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "general_bayes",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.7490577124998211,
+      "family_range": [
+        0.6229878233144215,
+        0.8745945610334671
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "general_bayes",
+      "branch": "independent_agree",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9989515327311181,
+      "family_range": [
+        0.9963989870152702,
+        1.0017600662801782
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "general_bayes",
+      "branch": "independent_conflict",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.999619839864553,
+      "family_range": [
+        0.9989918050804945,
+        1.0004392331277883
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "source_structure",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.6662188501918384,
+      "family_range": [
+        0.49752428432096196,
+        1.0028992644519927
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "source_structure",
+      "branch": "independent_agree",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9990231749321291,
+      "family_range": [
+        0.9964122784025103,
+        1.0021589529209114
+      ],
+      "normative": 1
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "source_structure",
+      "branch": "independent_conflict",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.999619839864553,
+      "family_range": [
+        0.9989918050804945,
+        1.0004392331277883
+      ],
+      "normative": 1
+    }
+  ],
+  "rendering": {
+    "width_inches": 6.3,
+    "height_inches": 3.5,
+    "minimum_font_points": 9.5,
+    "font": "Times New Roman",
+    "text_within_canvas": true,
+    "source_sha256": "f990cae38d733f83e3ade825eabf363abe3add02160461af3e0ad16b3f79b2d1"
+  }
+}

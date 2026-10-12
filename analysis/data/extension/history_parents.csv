@@ -1,0 +1,2 @@
+model,n_planned,n_valid,n_eligible,n_ineligible,planned_children,valid_rate,ok,invalid,truncated,error,source_file,source_sha256,cohort_file,cohort_sha256
+qwen3-8b-thinking,48,48,48,0,768,1.0,48,0,0,0,qwen-history-stage1.json,44e72364d1134618dd34e29e678327a710af34c1483fd3ee4af0b11eb2f28171,history-cohort.json,a61335ea59cf38715c475c9e53bcf92fcb8767fa6c99cfe1c417dc87634f7cf4

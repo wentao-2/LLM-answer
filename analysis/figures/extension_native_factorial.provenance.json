@@ -1,0 +1,623 @@
+{
+  "kind": "native_factorial",
+  "model": "qwen3-8b-thinking",
+  "overall": {
+    "n_planned": 2304,
+    "n_valid": 1736,
+    "valid_rate": 0.7534722222222222,
+    "status_counts": {
+      "ok": 1736,
+      "invalid": 360,
+      "truncated": 208
+    },
+    "exclusions": {},
+    "mae": {
+      "estimate": 0.08390472618569261,
+      "n_observations": 1736,
+      "n_families": 6,
+      "family_means": {
+        "2681e835e1fba79d5379af7c": 0.10578382621283394,
+        "836fd5005fa40dded731d5d8": 0.09290266470493576,
+        "94041ee13ddade7c65b6e35d": 0.11437371414157484,
+        "96627aa93958adc679dacc26": 0.058169777805377604,
+        "d4bfd770680b83fe5ad86ed1": 0.0767818725957256,
+        "e6ef3240b1d41da619f96eee": 0.055416501653707935
+      }
+    },
+    "signed_residual": {
+      "estimate": -0.009422182087979021,
+      "n_observations": 1736,
+      "n_families": 6,
+      "family_means": {
+        "2681e835e1fba79d5379af7c": -0.002632537183351421,
+        "836fd5005fa40dded731d5d8": -0.03136789417955923,
+        "94041ee13ddade7c65b6e35d": 0.018337084572779685,
+        "96627aa93958adc679dacc26": -0.019308805279863103,
+        "d4bfd770680b83fe5ad86ed1": -0.008670149504169642,
+        "e6ef3240b1d41da619f96eee": -0.012890790953710414
+      }
+    },
+    "directional_error": {
+      "estimate": -0.011294493155092617,
+      "n_observations": 1736,
+      "n_families": 6,
+      "family_means": {
+        "2681e835e1fba79d5379af7c": -0.017997479031281433,
+        "836fd5005fa40dded731d5d8": -0.0049000885938609426,
+        "94041ee13ddade7c65b6e35d": -0.03192867235840454,
+        "96627aa93958adc679dacc26": 0.01363667929971871,
+        "d4bfd770680b83fe5ad86ed1": -0.022386039055277352,
+        "e6ef3240b1d41da619f96eee": -0.004191359191450146
+      }
+    },
+    "generation": {
+      "output_tokens_total": 3858323,
+      "closed_thinking": 945,
+      "empty_thinking": 221
+    }
+  },
+  "sources": {
+    "analysis": {
+      "file": "qwen-native-factorial.json",
+      "sha256": "bcd2e590d9a98437df18509df3b28c27fc20420ec564ec96ca669605c216af7b"
+    }
+  },
+  "manifest_sha256": "1e68cd0c6ac561de6c3024ea8b80d919c86e816617c52bae40c832fb62588108",
+  "database_sha256": "8f8012e9af1250702e7296ff94e35984a0bdc9f53468b4cbd6ee07964b9c82e5",
+  "selection": "Pooled templates, positive and independent kept separate. An additional row retains the prespecified independent conflict stratum. No relation/template rows are reaggregated.",
+  "strata": {
+    "positive": {
+      "native_mode_mae": {
+        "metric": "absolute_error",
+        "candidate_sets": 48,
+        "complete_valid_sets": 3,
+        "point": {
+          "estimate": -0.06774427226507705,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -0.14388603491271817,
+            "96627aa93958adc679dacc26": -0.03924362549800797,
+            "e6ef3240b1d41da619f96eee": -0.020103156384505015
+          }
+        },
+        "bounds": {
+          "lower": -0.2267287461780904,
+          "upper": 0.10665137062779091,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "native_mode_attribution": {
+        "metric": "probability",
+        "candidate_sets": 48,
+        "complete_valid_sets": 3,
+        "point": {
+          "estimate": 8.333333333332416e-05,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": 0.00024999999999997247,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "bounds": {
+          "lower": -0.4296380613171403,
+          "upper": 0.4297369386828588,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "residual": {
+          "estimate": 8.333333333332416e-05,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": 0.00024999999999997247,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "residual_bounds": {
+          "lower": -0.42963806131714105,
+          "upper": 0.4297369386828597,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "wording_mae": {
+        "metric": "absolute_error",
+        "candidate_sets": 48,
+        "complete_valid_sets": 3,
+        "point": {
+          "estimate": -0.06768717935455866,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -0.14385810473815452,
+            "96627aa93958adc679dacc26": -0.03915637450199205,
+            "e6ef3240b1d41da619f96eee": -0.02004705882352941
+          }
+        },
+        "bounds": {
+          "lower": -0.09615574095608154,
+          "upper": 0.23722437584979963,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "wording_attribution": {
+        "metric": "probability",
+        "candidate_sets": 48,
+        "complete_valid_sets": 3,
+        "point": {
+          "estimate": -1.666666666666483e-05,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -4.999999999999449e-05,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "bounds": {
+          "lower": -0.3985895315822919,
+          "upper": 0.4607854684177073,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "residual": {
+          "estimate": -1.666666666666483e-05,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -4.999999999999449e-05,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "residual_bounds": {
+          "lower": -0.39858953158229254,
+          "upper": 0.460785468417708,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "budget_mae": {
+        "metric": "absolute_error",
+        "candidate_sets": 48,
+        "complete_valid_sets": 3,
+        "point": {
+          "estimate": -4.655029093939463e-06,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -1.3965087281825328e-05,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 6.938893903907228e-18
+          }
+        },
+        "bounds": {
+          "lower": -0.24860742406585024,
+          "upper": 0.08477269274003109,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "budget_attribution": {
+        "metric": "probability",
+        "candidate_sets": 48,
+        "complete_valid_sets": 3,
+        "point": {
+          "estimate": -1.666666666666483e-05,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -4.999999999999449e-05,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "bounds": {
+          "lower": -0.45727771429785447,
+          "upper": 0.4020972857021447,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "residual": {
+          "estimate": -1.666666666666483e-05,
+          "n_observations": 3,
+          "n_families": 3,
+          "family_means": {
+            "836fd5005fa40dded731d5d8": -4.999999999999449e-05,
+            "96627aa93958adc679dacc26": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          }
+        },
+        "residual_bounds": {
+          "lower": -0.4572777142978551,
+          "upper": 0.40209728570214565,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 768,
+          "n_missing_records": 165,
+          "n_missing_nonzero_coefficients": 165,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      }
+    },
+    "independent": {
+      "native_mode_mae": {
+        "metric": "absolute_error",
+        "candidate_sets": 96,
+        "complete_valid_sets": 2,
+        "point": {
+          "estimate": -0.1136428571428571,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.1136428571428571
+          }
+        },
+        "bounds": {
+          "lower": -0.34139570846651046,
+          "upper": 0.09694470243658415,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "native_mode_attribution": {
+        "metric": "probability",
+        "candidate_sets": 96,
+        "complete_valid_sets": 2,
+        "point": {
+          "estimate": 0.07571428571428572,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.07571428571428572
+          }
+        },
+        "bounds": {
+          "lower": -0.5037444114460706,
+          "upper": 0.5457347552205983,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0
+          }
+        },
+        "residual": {
+          "estimate": 0.07571428571428572,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.07571428571428572
+          }
+        },
+        "residual_bounds": {
+          "lower": -0.5037444114460684,
+          "upper": 0.5457347552205978,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "wording_mae": {
+        "metric": "absolute_error",
+        "candidate_sets": 96,
+        "complete_valid_sets": 2,
+        "point": {
+          "estimate": -0.22335714285714275,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.22335714285714275
+          }
+        },
+        "bounds": {
+          "lower": -0.20178845646725116,
+          "upper": 0.23655195443584295,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "wording_attribution": {
+        "metric": "probability",
+        "candidate_sets": 96,
+        "complete_valid_sets": 2,
+        "point": {
+          "estimate": -0.07571428571428572,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.07571428571428572
+          }
+        },
+        "bounds": {
+          "lower": -0.5348695819655044,
+          "upper": 0.5146095847011649,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0
+          }
+        },
+        "residual": {
+          "estimate": -0.07571428571428572,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.07571428571428572
+          }
+        },
+        "residual_bounds": {
+          "lower": -0.534869581965503,
+          "upper": 0.514609584701163,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "budget_mae": {
+        "metric": "absolute_error",
+        "candidate_sets": 96,
+        "complete_valid_sets": 2,
+        "point": {
+          "estimate": 0.03785714285714284,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.03785714285714284
+          }
+        },
+        "bounds": {
+          "lower": -0.2871499407647794,
+          "upper": 0.15119047013831474,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      },
+      "budget_attribution": {
+        "metric": "probability",
+        "candidate_sets": 96,
+        "complete_valid_sets": 2,
+        "point": {
+          "estimate": 0.07571428571428572,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.07571428571428572
+          }
+        },
+        "bounds": {
+          "lower": -0.5186147829480965,
+          "upper": 0.5308643837185724,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0
+          }
+        },
+        "residual": {
+          "estimate": 0.07571428571428572,
+          "n_observations": 2,
+          "n_families": 1,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.07571428571428572
+          }
+        },
+        "residual_bounds": {
+          "lower": -0.5186147829480945,
+          "upper": 0.5308643837185713,
+          "n_planned_units": 96,
+          "n_families": 6,
+          "n_unique_records": 1536,
+          "n_missing_records": 403,
+          "n_missing_nonzero_coefficients": 403,
+          "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+        }
+      }
+    }
+  },
+  "independent_conflict": {
+    "mae": {
+      "metric": "absolute_error",
+      "candidate_sets": 48,
+      "complete_valid_sets": 2,
+      "point": {
+        "estimate": -0.1136428571428571,
+        "n_observations": 2,
+        "n_families": 1,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.1136428571428571
+        }
+      },
+      "bounds": {
+        "lower": -0.3010586762938486,
+        "upper": -0.05819409296051547,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 768,
+        "n_missing_records": 125,
+        "n_missing_nonzero_coefficients": 125,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      }
+    },
+    "attribution": {
+      "metric": "probability",
+      "candidate_sets": 48,
+      "complete_valid_sets": 2,
+      "point": {
+        "estimate": 0.07571428571428572,
+        "n_observations": 2,
+        "n_families": 1,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.07571428571428572
+        }
+      },
+      "bounds": {
+        "lower": -0.331649748417149,
+        "upper": 0.31939191824951757,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 768,
+        "n_missing_records": 125,
+        "n_missing_nonzero_coefficients": 125,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      },
+      "normative_same_sets": {
+        "estimate": 0.0,
+        "n_observations": 2,
+        "n_families": 1,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.0
+        }
+      },
+      "residual": {
+        "estimate": 0.07571428571428572,
+        "n_observations": 2,
+        "n_families": 1,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.07571428571428572
+        }
+      },
+      "residual_bounds": {
+        "lower": -0.3316497484171487,
+        "upper": 0.3193919182495178,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 768,
+        "n_missing_records": 125,
+        "n_missing_nonzero_coefficients": 125,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      }
+    }
+  },
+  "rendering": {
+    "width_inches": 6.3,
+    "height_inches": 3.5,
+    "font": "Times New Roman",
+    "minimum_font_points": 9.5,
+    "text_within_canvas": true,
+    "point_and_bound_rows_separate": true,
+    "note": "Bounds are deterministic missingness bounds, not confidence intervals."
+  },
+  "outputs": [
+    {
+      "file": "extension_native_factorial.pdf",
+      "sha256": "b6bc20b2d113405e71c95a55187a31e313e27753a081dd62176cf2eaf36ec042"
+    },
+    {
+      "file": "extension_native_factorial.svg",
+      "sha256": "428f800f815ea05790e570e15ee469fb4cee7c1f5ba487ee70120ca2106c0879"
+    }
+  ]
+}

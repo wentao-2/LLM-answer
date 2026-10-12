@@ -1,0 +1,366 @@
+{
+  "input_sha256": "778f442fc19137dfa017fee6a851704e6317ed01cbafee23997a8291749822d3",
+  "script_sha256": "00fba9aab2abfd1e21df4aa5b80835fdf0198c7c9ffb7fb5fe6bd68fbb345092",
+  "width_inches": 6.3,
+  "height_inches": 3.05,
+  "minimum_font_points": 9.5,
+  "font": "Times New Roman",
+  "text_within_canvas": true,
+  "interval": "range of family means, not confidence interval",
+  "points": [
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "agree",
+      "rho": 0,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "agree",
+      "rho": 0.25,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.5309335829317919
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "agree",
+      "rho": 0.5,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.28563427873133335
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "agree",
+      "rho": 0.75,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.12112152052789982
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "agree",
+      "rho": 1,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "conflict",
+      "rho": 0,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.4994229465007907,
+      "family_range": [
+        1.4987057919312412,
+        1.5007876986980369
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "conflict",
+      "rho": 0.25,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.499531947733968,
+      "family_range": [
+        1.4990820278608907,
+        1.500995914191005
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "conflict",
+      "rho": 0.5,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.499321856893685,
+      "family_range": [
+        1.498443975101012,
+        1.5007876986980369
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "native_self",
+      "branch": "conflict",
+      "rho": 0.75,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.499416436423925,
+      "family_range": [
+        1.4987057919312412,
+        1.5009768844560143
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "agree",
+      "rho": 0,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "agree",
+      "rho": 0.25,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.5309335829317919
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "agree",
+      "rho": 0.5,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.020614946677818068,
+      "family_range": [
+        0.0,
+        0.1236896800669084
+      ],
+      "normative": 0.28563427873133335
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "agree",
+      "rho": 0.75,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.12112152052789982
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "agree",
+      "rho": 1,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 0.0,
+      "family_range": [
+        0.0,
+        0.0
+      ],
+      "normative": 0.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "conflict",
+      "rho": 0,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.2078271054518726,
+      "family_range": [
+        0.9988825469042159,
+        1.501115644584358
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "conflict",
+      "rho": 0.25,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.165978481292723,
+      "family_range": [
+        0.9987093504524294,
+        1.2510276309329584
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "conflict",
+      "rho": 0.5,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.1454809700872854,
+      "family_range": [
+        0.8751928668373075,
+        1.2510276309329584
+      ],
+      "normative": 1.0
+    },
+    {
+      "model": "phi4-standard-r6",
+      "history_arm": "replay_self",
+      "branch": "conflict",
+      "rho": 0.75,
+      "selection": "common complete parents",
+      "n": 24,
+      "planned": 24,
+      "estimate": 1.166013057695446,
+      "family_range": [
+        0.9987093504524294,
+        1.2504718658810474
+      ],
+      "normative": 1.0
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "original",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9988624946313803,
+      "family_range": [
+        0.9960837496595003,
+        1.001361179639445
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "general_bayes",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9987917063242253,
+      "family_range": [
+        0.9957065978360393,
+        1.001361179639445
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "native_self",
+      "condition": "source_structure",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.9988058910200921,
+      "family_range": [
+        0.9960433916448709,
+        1.0011732520511307
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "original",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.28599955538424565,
+      "family_range": [
+        0.24976231314674488,
+        0.37470103069071886
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "general_bayes",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.7490577124998211,
+      "family_range": [
+        0.6229878233144215,
+        0.8745945610334671
+      ],
+      "normative": 0
+    },
+    {
+      "history_arm": "replay_self",
+      "condition": "source_structure",
+      "branch": "copy",
+      "selection": "common complete parents",
+      "n": 48,
+      "planned": 48,
+      "estimate": 0.6662188501918384,
+      "family_range": [
+        0.49752428432096196,
+        1.0028992644519927
+      ],
+      "normative": 0
+    }
+  ]
+}

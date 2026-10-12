@@ -1,0 +1,55 @@
+{
+  "phi4-standard-r6": {
+    "name": "history-s00",
+    "manifest": "manifest.jsonl",
+    "experiment_protocol": "STANDARD_PHI_PROTOCOL.md",
+    "seed": 1601,
+    "batch_size": 2,
+    "max_input_tokens": 8192,
+    "max_new_tokens": 8192,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "do_sample": false,
+    "num_beams": 1,
+    "store_token_ids": true,
+    "cpu_threads": 4,
+    "readout": "probability",
+    "models": [
+      {
+        "name": "phi4-standard-r6",
+        "path": "/workspace/i16-review-supplement-20261011/standard-phi/checkpoint",
+        "revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+        "batch_size": 2,
+        "require_think_close": false,
+        "mode": "native_nonreasoning",
+        "chat_template_kwargs": {}
+      }
+    ]
+  },
+  "qwen3-8b-r6": {
+    "name": "main-s00",
+    "manifest": "manifest.jsonl",
+    "experiment_protocol": "VLLM_R6_PROTOCOL.md",
+    "seed": 1601,
+    "temperature": 0,
+    "max_input_tokens": 8192,
+    "max_new_tokens": 12288,
+    "max_model_len": 20480,
+    "dtype": "bfloat16",
+    "backend": "vllm-0.8.5",
+    "chunk_size": 64,
+    "readout": "probability",
+    "models": [
+      {
+        "name": "qwen3-8b-r6",
+        "path": "/workspace/models/Qwen/Qwen3-8B",
+        "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+        "batch_size": 32,
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        },
+        "require_think_close": true
+      }
+    ]
+  }
+}

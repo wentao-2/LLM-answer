@@ -1,0 +1,63 @@
+{
+  "version": "i16-mechanism-followup-20261012",
+  "frozen_at": "2026-10-11T18:36:11.937427+00:00",
+  "stage1_calls": 768,
+  "stage2_parents": 64,
+  "stage2_children_max": 2048,
+  "max_calls": 2880,
+  "rhos": [
+    0,
+    0.5,
+    1
+  ],
+  "rules": [
+    "direct",
+    "selector"
+  ],
+  "questions": [
+    "general",
+    "explicit"
+  ],
+  "conditions": [
+    "ordinary",
+    "general_bayes",
+    "explicit",
+    "full_steps"
+  ],
+  "priors": [
+    0.18,
+    0.32,
+    0.68,
+    0.82
+  ],
+  "transfer_reliabilities": [
+    0.72,
+    0.86
+  ],
+  "contexts": [
+    "sensor",
+    "report"
+  ],
+  "old_design_sha256": "f01d7822cc857966eab8dc990fc3b78aea6bf4dce385e831898fbc082e1fa2bc",
+  "exact_oracle_cases": 320,
+  "allocations": [
+    {
+      "label": "parents_phi",
+      "model": "phi4-standard-r6",
+      "calls": 32,
+      "shards": 6
+    },
+    {
+      "label": "parents_qwen",
+      "model": "qwen3-8b-r6",
+      "calls": 32,
+      "shards": 2
+    }
+  ],
+  "complete_children_per_valid_parent": 32,
+  "selection": "all status=ok parents with finite p in [0,1], irrespective of accuracy",
+  "stage2_adaptation": false,
+  "final_instruction": "End with exactly one line starting FINAL_JSON: followed by a JSON object whose only key is p_h1 and whose value is a number between 0 and 1. Do not write anything after that line.",
+  "full_steps": "Before calculating the final probability, perform the following steps.\n1. List every displayed observed value by its variable name. Keep earlier observations in the list. Do not treat the earlier assistant answer or explanation as another observation.\n2. State how each displayed record was generated and which records share an observation source. Preserve the stated probability of any unrevealed source choice. Equal values from independent observations still count as two observations. A quotation adds documentation of its source, not another independent observation.\n3. For H=0 and H=1 separately, compute the joint likelihood of the complete displayed observations. Sum over source choices and potential observations whose realized values are not displayed.\n4. Combine those likelihoods with the stated prior and report the conditional probability.\nBefore the final answer, write one line starting WORK_JSON: followed by a JSON object with keys observed (an object mapping each observed variable to its displayed value), sources (an object mapping each displayed record name to a short source description), not_revealed_source_variables (an array of source variable names whose realized values were not displayed), likelihood_h0 (a number), and likelihood_h1 (a number). These likelihoods must cover the complete displayed observations, not include the prior. Then give the required FINAL_JSON line.",
+  "general_bayes": "Use Bayes' theorem to combine the observations according to the stated probabilities before reporting the probability of H=1."
+}

@@ -1,0 +1,22 @@
+{
+  "phi4-standard-r6": {
+    "accelerate": "1.15.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.6.0+cu124",
+    "transformers": "5.3.0"
+  },
+  "qwen3-8b-r6": {
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "packages": {
+      "huggingface-hub": "0.36.2",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "vllm": "0.8.5"
+    },
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]"
+  }
+}

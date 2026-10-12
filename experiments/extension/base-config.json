@@ -1,0 +1,40 @@
+{
+  "seed": 1601,
+  "batch_size": 2,
+  "max_input_tokens": 8192,
+  "max_new_tokens": 12288,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "do_sample": false,
+  "num_beams": 1,
+  "store_token_ids": true,
+  "cpu_threads": 6,
+  "readout": "probability",
+  "models": [
+    {
+      "name": "qwen3-8b-thinking",
+      "path": "/workspace/models/Qwen/Qwen3-8B",
+      "mode": "native thinking unless item overrides",
+      "revision": "existing local checkpoint, revision not recovered",
+      "batch_size": 8,
+      "chat_template_kwargs": {"enable_thinking": true},
+      "require_think_close": true
+    },
+    {
+      "name": "phi4-reasoning",
+      "path": "/workspace/models/microsoft/Phi-4-reasoning",
+      "mode": "native reasoning",
+      "revision": "1de18ec97600877ce63dbf60c73b998da99f0195",
+      "batch_size": 2,
+      "require_think_close": true
+    },
+    {
+      "name": "mistral-nemo-instruct",
+      "path": "/workspace/models/mistralai/Mistral-Nemo-Instruct-2407",
+      "mode": "native instruct",
+      "revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+      "batch_size": 2,
+      "require_think_close": false
+    }
+  ]
+}

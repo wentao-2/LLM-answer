@@ -1,0 +1,358 @@
+{
+  "kind": "attribution_diagnosis",
+  "point_and_bound_rows_separate": false,
+  "sources": {
+    "conditions_csv": {
+      "file": "attribution_decomposition.csv",
+      "sha256": "068359eac8bebd9b99c68851abc2b6ad8eeca9645338d77036735ed683b3637e"
+    },
+    "reference_analysis": {
+      "file": "r3-qwen-cross-family-reference.json",
+      "sha256": "d82b152a998531703c1405ef9f226e29cfa25c2649034ce32a2e1dcb74337af3"
+    }
+  },
+  "conditions": [
+    {
+      "reminder": "legacy",
+      "output_instruction": "restrictive",
+      "template_id": "frequency_v3",
+      "complete_pairs": "24",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": 2.3052235728754908e-05,
+          "lower": 2.3052235728737713e-05,
+          "upper": 2.3052235728737713e-05
+        },
+        "other_directional_error": {
+          "estimate": 2.2189023954198204e-06,
+          "lower": 2.218902395378919e-06,
+          "upper": 2.218902395378919e-06
+        },
+        "attribution_gap": {
+          "estimate": 2.0833333333335088e-05,
+          "lower": 2.083333333333104e-05,
+          "upper": 2.083333333333104e-05
+        }
+      }
+    },
+    {
+      "reminder": "legacy",
+      "output_instruction": "restrictive",
+      "template_id": "likelihood_v3",
+      "complete_pairs": "24",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": -0.13863855157778576,
+          "lower": -0.13863855157778573,
+          "upper": -0.13863855157778573
+        },
+        "other_directional_error": {
+          "estimate": -0.1712295895081094,
+          "lower": -0.1712295895081093,
+          "upper": -0.1712295895081093
+        },
+        "attribution_gap": {
+          "estimate": 0.032591037930323655,
+          "lower": 0.032591037930323655,
+          "upper": 0.032591037930323655
+        }
+      }
+    },
+    {
+      "reminder": "scoped",
+      "output_instruction": "restrictive",
+      "template_id": "frequency_v3",
+      "complete_pairs": "24",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": -0.027181163840107197,
+          "lower": -0.02718116384010719,
+          "upper": -0.02718116384010719
+        },
+        "other_directional_error": {
+          "estimate": -0.04507336443093791,
+          "lower": -0.04507336443093792,
+          "upper": -0.04507336443093792
+        },
+        "attribution_gap": {
+          "estimate": 0.01789220059083071,
+          "lower": 0.017892200590830718,
+          "upper": 0.017892200590830718
+        }
+      }
+    },
+    {
+      "reminder": "scoped",
+      "output_instruction": "restrictive",
+      "template_id": "likelihood_v3",
+      "complete_pairs": "24",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": -0.19348919326414174,
+          "lower": -0.19348919326414168,
+          "upper": -0.19348919326414168
+        },
+        "other_directional_error": {
+          "estimate": -0.1892337021788187,
+          "lower": -0.18923370217881869,
+          "upper": -0.18923370217881869
+        },
+        "attribution_gap": {
+          "estimate": -0.004255491085323026,
+          "lower": -0.00425549108532302,
+          "upper": -0.00425549108532302
+        }
+      }
+    },
+    {
+      "reminder": "legacy",
+      "output_instruction": "compatible",
+      "template_id": "frequency_v3",
+      "complete_pairs": "24",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": 5.968902395419234e-06,
+          "lower": 5.968902395527519e-06,
+          "upper": 5.968902395527519e-06
+        },
+        "other_directional_error": {
+          "estimate": 4.5135569062083724e-05,
+          "lower": 4.5135569062187096e-05,
+          "upper": 4.5135569062187096e-05
+        },
+        "attribution_gap": {
+          "estimate": -3.916666666666449e-05,
+          "lower": -3.916666666665958e-05,
+          "upper": -3.916666666665958e-05
+        }
+      }
+    },
+    {
+      "reminder": "legacy",
+      "output_instruction": "compatible",
+      "template_id": "likelihood_v3",
+      "complete_pairs": "23",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": 4.408583137307594e-06,
+          "lower": 8.0522357285423e-06,
+          "upper": 8.0522357285423e-06
+        },
+        "other_directional_error": {
+          "estimate": 2.3252498039698643e-06,
+          "lower": -0.04016069776427138,
+          "upper": 0.0015059689023951967
+        },
+        "attribution_gap": {
+          "estimate": 2.08333333333773e-06,
+          "lower": -0.0014979166666666613,
+          "upper": 0.04016874999999999
+        }
+      }
+    },
+    {
+      "reminder": "scoped",
+      "output_instruction": "compatible",
+      "template_id": "frequency_v3",
+      "complete_pairs": "23",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": 1.563223171079736e-07,
+          "lower": -0.041519156097604606,
+          "upper": 0.00014751056906206483
+        },
+        "other_directional_error": {
+          "estimate": 2.557298898377433e-05,
+          "lower": 2.501056906215049e-05,
+          "upper": 2.501056906215049e-05
+        },
+        "attribution_gap": {
+          "estimate": -2.5416666666666355e-05,
+          "lower": -0.04154416666666666,
+          "upper": 0.00012250000000000455
+        }
+      }
+    },
+    {
+      "reminder": "scoped",
+      "output_instruction": "compatible",
+      "template_id": "likelihood_v3",
+      "complete_pairs": "24",
+      "candidate_pairs": "24",
+      "metrics": {
+        "self_directional_error": {
+          "estimate": 1.788944062086471e-06,
+          "lower": 1.788944062052454e-06,
+          "upper": 1.788944062052454e-06
+        },
+        "other_directional_error": {
+          "estimate": 8.343902395420001e-06,
+          "lower": 8.343902395457035e-06,
+          "upper": 8.343902395457035e-06
+        },
+        "attribution_gap": {
+          "estimate": -6.55495833333353e-06,
+          "lower": -6.554958333335192e-06,
+          "upper": -6.554958333335192e-06
+        }
+      }
+    }
+  ],
+  "information": {
+    "positive": {
+      "metric": "probability",
+      "candidate_sets": 48,
+      "complete_valid_sets": 37,
+      "point": {
+        "estimate": 3.893055555555154e-05,
+        "n_observations": 37,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.0,
+          "836fd5005fa40dded731d5d8": 3.333333333332966e-05,
+          "94041ee13ddade7c65b6e35d": 0.0,
+          "96627aa93958adc679dacc26": -4.00000000000178e-05,
+          "d4bfd770680b83fe5ad86ed1": 0.0,
+          "e6ef3240b1d41da619f96eee": 0.0002402499999999974
+        }
+      },
+      "bounds": {
+        "lower": -0.050880791666666675,
+        "upper": 0.17828587499999998,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 96,
+        "n_missing_records": 11,
+        "n_missing_nonzero_coefficients": 11,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      },
+      "normative_same_sets": {
+        "estimate": 0.0,
+        "n_observations": 37,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.0,
+          "836fd5005fa40dded731d5d8": 0.0,
+          "94041ee13ddade7c65b6e35d": 0.0,
+          "96627aa93958adc679dacc26": 0.0,
+          "d4bfd770680b83fe5ad86ed1": 0.0,
+          "e6ef3240b1d41da619f96eee": 0.0
+        }
+      },
+      "residual": {
+        "estimate": 3.893055555555154e-05,
+        "n_observations": 37,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.0,
+          "836fd5005fa40dded731d5d8": 3.333333333332966e-05,
+          "94041ee13ddade7c65b6e35d": 0.0,
+          "96627aa93958adc679dacc26": -4.00000000000178e-05,
+          "d4bfd770680b83fe5ad86ed1": 0.0,
+          "e6ef3240b1d41da619f96eee": 0.0002402499999999974
+        }
+      },
+      "residual_bounds": {
+        "lower": -0.05088079166666666,
+        "upper": 0.17828587499999993,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 96,
+        "n_missing_records": 11,
+        "n_missing_nonzero_coefficients": 11,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      }
+    },
+    "independent": {
+      "metric": "probability",
+      "candidate_sets": 96,
+      "complete_valid_sets": 87,
+      "point": {
+        "estimate": 0.19026721027827379,
+        "n_observations": 87,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.2629842857142857,
+          "836fd5005fa40dded731d5d8": 0.179205,
+          "94041ee13ddade7c65b6e35d": 0.25912722,
+          "96627aa93958adc679dacc26": 0.09941889881249999,
+          "d4bfd770680b83fe5ad86ed1": 0.204825,
+          "e6ef3240b1d41da619f96eee": 0.13604285714285716
+        }
+      },
+      "bounds": {
+        "lower": 0.17328198626041666,
+        "upper": 0.18369865292708334,
+        "n_planned_units": 96,
+        "n_families": 6,
+        "n_unique_records": 144,
+        "n_missing_records": 5,
+        "n_missing_nonzero_coefficients": 1,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      },
+      "normative_same_sets": {
+        "estimate": 0.19026644218068867,
+        "n_observations": 87,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.2629879142254648,
+          "836fd5005fa40dded731d5d8": 0.1792078793755823,
+          "94041ee13ddade7c65b6e35d": 0.2591196685080599,
+          "96627aa93958adc679dacc26": 0.09941361486858027,
+          "d4bfd770680b83fe5ad86ed1": 0.20482742241665944,
+          "e6ef3240b1d41da619f96eee": 0.13604215368978526
+        }
+      },
+      "residual": {
+        "estimate": 7.680975851380573e-07,
+        "n_observations": 87,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -3.628511179111009e-06,
+          "836fd5005fa40dded731d5d8": -2.87937558230561e-06,
+          "94041ee13ddade7c65b6e35d": 7.551491940063308e-06,
+          "96627aa93958adc679dacc26": 5.283943919718887e-06,
+          "d4bfd770680b83fe5ad86ed1": -2.4224166594334164e-06,
+          "e6ef3240b1d41da619f96eee": 7.034530718961842e-07
+        }
+      },
+      "residual_bounds": {
+        "lower": -0.010379341788385623,
+        "upper": 3.732487828104036e-05,
+        "n_planned_units": 96,
+        "n_families": 6,
+        "n_unique_records": 144,
+        "n_missing_records": 5,
+        "n_missing_nonzero_coefficients": 1,
+        "method": "fixed finite design bounds; distinct missing probabilities in [0,1]; shared coefficients merged"
+      }
+    }
+  },
+  "selection": "All eight R3 independent, signal-visible, agreeing conditions. No reaggregation.",
+  "rendering": {
+    "width_inches": 6.3,
+    "height_inches": 4.2,
+    "font": "Times New Roman",
+    "minimum_font_points": 9.5,
+    "text_within_canvas": true,
+    "point_and_bound_rows_separate": false,
+    "note": "Bounds are deterministic missingness bounds, not confidence intervals."
+  },
+  "outputs": [
+    {
+      "file": "extension_normative_diagnosis.pdf",
+      "sha256": "e1e2587b8db279ea8049154739b96c68184d557269ce2c63b0b9b2d1a0a37fa0"
+    },
+    {
+      "file": "extension_normative_diagnosis.svg",
+      "sha256": "25615fc39faf3132cc0852cf2ded62990267b39af5b4d86a48b9669370965700"
+    }
+  ]
+}

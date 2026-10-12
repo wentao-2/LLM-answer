@@ -1,0 +1,92 @@
+{
+  "state": "passed",
+  "no_new_inference": true,
+  "raw_outputs_changed": false,
+  "stages": [
+    {
+      "stage": "inference/results/qwen-parents.sqlite",
+      "n": 144,
+      "statuses": {
+        "ok": 142,
+        "invalid": 2
+      },
+      "sha256": "e1f8b55bf7141498c632cc9e52072ec74c5b0601c7bd54d6bbfe4f717cf39406"
+    },
+    {
+      "stage": "vllm-r6/results/main.sqlite",
+      "n": 4000,
+      "statuses": {
+        "ok": 3933,
+        "truncated": 67
+      },
+      "sha256": "353ce78cf28989d22e998bc2cea256c9b79a83b67b6660083605e231bbf56cfb"
+    },
+    {
+      "stage": "author-independence-r6/results.sqlite",
+      "n": 576,
+      "statuses": {
+        "ok": 570,
+        "truncated": 6
+      },
+      "sha256": "d50a94fbb986677c6a2f59de4548ff559c2f80ba47619c24383599260f1bf236"
+    },
+    {
+      "stage": "qwen-r6-qualification/results.sqlite",
+      "n": 96,
+      "statuses": {
+        "ok": 96
+      },
+      "sha256": "076877934e1b515f7d7d8eb10fea320ed08be3e6769cb4cfaa2bcb9ca59ab208"
+    },
+    {
+      "stage": "standard-phi/study/results/gate.sqlite",
+      "n": 96,
+      "statuses": {
+        "ok": 96
+      },
+      "sha256": "cdd13fb0692f63cb935c8a34384c252e3386cd2e1064d1075487b3d8e9be5fdf"
+    },
+    {
+      "stage": "standard-phi/study/results/main.sqlite",
+      "n": 1776,
+      "statuses": {
+        "ok": 1747,
+        "invalid": 29
+      },
+      "sha256": "41ba09208ab24d6a52acf0e87e11c90b1813f7f92b90481df7031fc8f46e184b"
+    },
+    {
+      "stage": "standard-phi/study/results/history.sqlite",
+      "n": 768,
+      "statuses": {
+        "ok": 768
+      },
+      "sha256": "13dba035c89db8dbc9ab3c22d082c61a2f4edf9121bff347defcb4256b14a4d8"
+    }
+  ],
+  "analysis_files_recomputed": [
+    "qwen_history",
+    "paraphrases",
+    "four_wordings",
+    "phi_static",
+    "phi_history",
+    "phi_gate",
+    "qwen_runtime_qualification"
+  ],
+  "checks": {
+    "rows_metadata_oracle_readout_verified": 7456,
+    "closed_worker_shards_verified": 28,
+    "numeric_fields_compared": 223515,
+    "family_means_independently_recomputed": 8974,
+    "finite_bounds_independently_recomputed": 5802,
+    "parents_with_complete_constructed_cells": 190
+  },
+  "tolerances": {
+    "absolute": 2e-12,
+    "relative": 2e-12
+  },
+  "limits": [
+    "Weight files are not copied locally. Full file verification is evidenced by the retained server inventory.",
+    "Tokenizer decoding is not rerun locally. Stored final strings, frozen parser, token counts and termination metadata are checked."
+  ]
+}

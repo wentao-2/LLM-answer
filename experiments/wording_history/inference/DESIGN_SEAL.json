@@ -1,0 +1,13 @@
+{
+  "protocol_sha256": "ef693025d5e5d5a2b93d5379552ce2d6a29d8277e45120cc72fb1c7fb9e2042e",
+  "helper_sha256": "92b6bf4486155d8f1def44398b42363ce42a041fae84390f400ee49dd995685c",
+  "controller_sha256": "706abdca25018536745db43fe82eb859a42dbf3ebabf78ce78717828b1bf259d",
+  "manifests": {
+    "paraphrase-neutral.jsonl": "79dab254b50199bbc6b458bd4ae15f07d536a5f8a0e226d62c1613d006abd9bc",
+    "paraphrase.jsonl": "ee6d10adefa46d688e8474fa9e2d7bbb7d3e57ee0e725b5db43955afb8eff337",
+    "phi-gate.jsonl": "8bfd8355c870e43e6a978a26fa1b1c5030fa45b0e72d73f2ca0969978deb0279",
+    "qwen-parents.jsonl": "4e39d95441953b1531f2de71ae415a64b3ff238c08ddc549368de8037a96a5a6"
+  },
+  "scientific_inference_started": false,
+  "amendment_sha256": "4c197750a436474578207f72efec517235f88813dfb18c45c4f5d0db57d0fddd"
+}

@@ -1,0 +1,103 @@
+{
+  "name": "validation-8gpu-recovery",
+  "phase": "mechanism",
+  "seed": 1601,
+  "manifest": "manifest.jsonl",
+  "batch_size": 4,
+  "cpu_threads": 8,
+  "dtype": "bfloat16",
+  "do_sample": false,
+  "num_beams": 1,
+  "max_input_tokens": 1600,
+  "max_new_tokens": 12288,
+  "attention": "sdpa",
+  "analysis_script": "analyze_mechanism.py",
+  "stall_timeout_sec": 5400,
+  "models": [
+    {
+      "name": "qwen3-8b-thinking",
+      "path": "/workspace/models/Qwen/Qwen3-8B",
+      "mode": "thinking-native-final-marker",
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "max_new_tokens": 12288
+    },
+    {
+      "name": "qwen35-9b-thinking",
+      "path": "/workspace/models/Qwen3.5-9B",
+      "mode": "thinking-native-final-marker",
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "loader": "image-text-to-text",
+      "max_new_tokens": 12288
+    }
+  ],
+  "experiment_protocol": "EXPERIMENT_PROTOCOL.md",
+  "design_snapshot": {
+    "index": "design_snapshot/INDEX.json",
+    "gate_manifest": "design_snapshot/manifest-gate.jsonl",
+    "main_manifest": "design_snapshot/manifest-main.jsonl"
+  },
+  "parallel": {
+    "shards": [
+      {
+        "name": "shard-0",
+        "run_dir": "shards/shard-0",
+        "gpu": 0
+      },
+      {
+        "name": "shard-1",
+        "run_dir": "shards/shard-1",
+        "gpu": 1
+      },
+      {
+        "name": "shard-2",
+        "run_dir": "shards/shard-2",
+        "gpu": 2
+      },
+      {
+        "name": "shard-3",
+        "run_dir": "shards/shard-3",
+        "gpu": 3
+      },
+      {
+        "name": "shard-4",
+        "run_dir": "shards/shard-4",
+        "gpu": 4
+      },
+      {
+        "name": "shard-5",
+        "run_dir": "shards/shard-5",
+        "gpu": 5
+      },
+      {
+        "name": "shard-6",
+        "run_dir": "shards/shard-6",
+        "gpu": 6
+      },
+      {
+        "name": "shard-7",
+        "run_dir": "shards/shard-7",
+        "gpu": 7
+      }
+    ],
+    "max_failures": 3,
+    "stall_timeout_sec": 5400,
+    "backup_interval_sec": 300,
+    "allowed_host": {
+      "hostname": "autodl-container-d12344b553-8a0fa340",
+      "boot_id": "9cdbe507-068d-4757-8c81-7dab6e800173",
+      "machine_id": "a423ec511a424593a3e96a73ddb81982"
+    },
+    "partition_rule": "original manifest index modulo 8"
+  },
+  "migration": {
+    "source_run": "/workspace/i16-self-evidence/runs/validation-main",
+    "snapshot": "previous.results.sqlite",
+    "inherited_rows": 1032,
+    "snapshot_sha256": "3bae8a7b12f851410cfc9caadd1c5a9d5f8e449dbdd41408f020620ebaf15cc4",
+    "record_sha256": "f596d6d90c041d284330796ea9f2186f73e1e5630cce5d6ac05bda90fa071abc"
+  }
+}

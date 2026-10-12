@@ -1,0 +1,1661 @@
+{
+  "description": "Exact excerpts of frozen analyses for plotting, with source hashes and section locators.",
+  "sources": {
+    "R1": {
+      "path": "results/formal-4gpu-recovery/analysis/summary.json",
+      "sha256": "c88739c0e6be6b35b9f49534aa7411a5a5c5590aad8d830d7993768a9b670add"
+    },
+    "R2": {
+      "path": "results/mechanism-discrimination/analysis/summary.json",
+      "sha256": "dcac8477fa6b8ee7fa3e642cc0a2570acf700772533d8f3ac21798e6b436b9d4"
+    },
+    "R3": {
+      "path": "results/validation-8gpu-recovery/analysis/summary.json",
+      "sha256": "aeb894630b7db5594e7399af9425a4ef3fdbb9326f4662b1f96e8c64983ae281"
+    }
+  },
+  "r1_attribution": [
+    {
+      "round": "R1",
+      "reminder": "explicit",
+      "condition": "attribution_same_all",
+      "source_section": "core[model=qwen3-8b-thinking]/arms[reminder=explicit]/analyses[name=qwen3-8b-thinking:formal:explicit:attribution_same_all]",
+      "counts": {
+        "candidate_sets": 240,
+        "complete_valid_sets": 240,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 0,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 1.8287408205138894e-06,
+        "n_observations": 240,
+        "ci95": [
+          -2.710832953732956e-06,
+          6.605243887015357e-06
+        ],
+        "ci_method": "percentile bootstrap of equally weighted numerical-family means",
+        "n_families": 15
+      }
+    },
+    {
+      "round": "R1",
+      "reminder": "explicit",
+      "condition": "attribution_independent_agree",
+      "source_section": "core[model=qwen3-8b-thinking]/arms[reminder=explicit]/analyses[name=qwen3-8b-thinking:formal:explicit:attribution_independent_agree]",
+      "counts": {
+        "candidate_sets": 240,
+        "complete_valid_sets": 226,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 14,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 0.08203879446037263,
+        "n_observations": 226,
+        "ci95": [
+          0.055475340500611064,
+          0.11402580462041942
+        ],
+        "ci_method": "percentile bootstrap of equally weighted numerical-family means",
+        "n_families": 15
+      }
+    },
+    {
+      "round": "R1",
+      "reminder": "explicit",
+      "condition": "attribution_independent_conflict",
+      "source_section": "core[model=qwen3-8b-thinking]/arms[reminder=explicit]/analyses[name=qwen3-8b-thinking:formal:explicit:attribution_independent_conflict]",
+      "counts": {
+        "candidate_sets": 240,
+        "complete_valid_sets": 240,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 0,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 0.005888781353463329,
+        "n_observations": 240,
+        "ci95": [
+          -0.012699146417315305,
+          0.02423912932433435
+        ],
+        "ci_method": "percentile bootstrap of equally weighted numerical-family means",
+        "n_families": 15
+      }
+    },
+    {
+      "round": "R1",
+      "reminder": "minimal",
+      "condition": "attribution_same_all",
+      "source_section": "core[model=qwen3-8b-thinking]/arms[reminder=minimal]/analyses[name=qwen3-8b-thinking:formal:minimal:attribution_same_all]",
+      "counts": {
+        "candidate_sets": 240,
+        "complete_valid_sets": 239,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 1,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 0.001301120728322313,
+        "n_observations": 239,
+        "ci95": [
+          4.3743670169249394e-06,
+          0.0029448547798941256
+        ],
+        "ci_method": "percentile bootstrap of equally weighted numerical-family means",
+        "n_families": 15
+      }
+    },
+    {
+      "round": "R1",
+      "reminder": "minimal",
+      "condition": "attribution_independent_agree",
+      "source_section": "core[model=qwen3-8b-thinking]/arms[reminder=minimal]/analyses[name=qwen3-8b-thinking:formal:minimal:attribution_independent_agree]",
+      "counts": {
+        "candidate_sets": 240,
+        "complete_valid_sets": 213,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 27,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 0.080745229128604,
+        "n_observations": 213,
+        "ci95": [
+          0.056101224797554784,
+          0.10792352937264578
+        ],
+        "ci_method": "percentile bootstrap of equally weighted numerical-family means",
+        "n_families": 15
+      }
+    },
+    {
+      "round": "R1",
+      "reminder": "minimal",
+      "condition": "attribution_independent_conflict",
+      "source_section": "core[model=qwen3-8b-thinking]/arms[reminder=minimal]/analyses[name=qwen3-8b-thinking:formal:minimal:attribution_independent_conflict]",
+      "counts": {
+        "candidate_sets": 240,
+        "complete_valid_sets": 239,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 1,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 0.0014027277497694135,
+        "n_observations": 239,
+        "ci95": [
+          -0.010665231933982385,
+          0.013477333200539144
+        ],
+        "ci_method": "percentile bootstrap of equally weighted numerical-family means",
+        "n_families": 15
+      }
+    }
+  ],
+  "r3_decomposition": {
+    "model": "qwen3-8b-thinking",
+    "protocol": "independent",
+    "visibility": "signal_visible",
+    "reminder": "legacy",
+    "output_instruction": "restrictive",
+    "template_id": "likelihood_v3",
+    "relation": "agree",
+    "candidate_pairs": 24,
+    "complete_pairs": 24,
+    "metrics": {
+      "self_directional_error": {
+        "estimate": -0.13863855157778576,
+        "n_observations": 24,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.20352171525704907,
+          "836fd5005fa40dded731d5d8": -0.13883242541783128,
+          "94041ee13ddade7c65b6e35d": -0.17112017007021832,
+          "96627aa93958adc679dacc26": -0.03788026004019086,
+          "d4bfd770680b83fe5ad86ed1": -0.1923044174828915,
+          "e6ef3240b1d41da619f96eee": -0.08817232119853353
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "other_directional_error": {
+        "estimate": -0.1712295895081094,
+        "n_observations": 24,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.20352171525704907,
+          "836fd5005fa40dded731d5d8": -0.19746878905419493,
+          "94041ee13ddade7c65b6e35d": -0.3074467006824632,
+          "96627aa93958adc679dacc26": -0.038463593373524216,
+          "d4bfd770680b83fe5ad86ed1": -0.1923044174828915,
+          "e6ef3240b1d41da619f96eee": -0.08817232119853353
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "attribution_gap": {
+        "estimate": 0.032591037930323655,
+        "n_observations": 24,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.0,
+          "836fd5005fa40dded731d5d8": 0.05863636363636365,
+          "94041ee13ddade7c65b6e35d": 0.13632653061224492,
+          "96627aa93958adc679dacc26": 0.0005833333333333524,
+          "d4bfd770680b83fe5ad86ed1": 0.0,
+          "e6ef3240b1d41da619f96eee": 0.0
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "self_mae": {
+        "estimate": 0.15238657154758545,
+        "n_observations": 24,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.20352171525704907,
+          "836fd5005fa40dded731d5d8": 0.16183510638297874,
+          "94041ee13ddade7c65b6e35d": 0.17112017007021832,
+          "96627aa93958adc679dacc26": 0.08707212091219015,
+          "d4bfd770680b83fe5ad86ed1": 0.1923044174828915,
+          "e6ef3240b1d41da619f96eee": 0.0984658991801849
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "other_mae": {
+        "estimate": 0.18094938487260673,
+        "n_observations": 24,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.20352171525704907,
+          "836fd5005fa40dded731d5d8": 0.19746878905419493,
+          "94041ee13ddade7c65b6e35d": 0.3074467006824632,
+          "96627aa93958adc679dacc26": 0.0864887875788568,
+          "d4bfd770680b83fe5ad86ed1": 0.1923044174828915,
+          "e6ef3240b1d41da619f96eee": 0.0984658991801849
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      }
+    },
+    "descriptive_category_counts": {
+      "other_pattern": 23,
+      "both_near_norm": 1
+    },
+    "tolerance": 0.02,
+    "missing_probability_bounds": {
+      "self_directional_error": {
+        "lower": -0.13863855157778573,
+        "upper": -0.13863855157778573,
+        "n_planned_units": 24,
+        "n_families": 6,
+        "n_unique_records": 24,
+        "n_unknown_unique_records": 0,
+        "n_unknown_with_nonzero_coefficient": 0,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      },
+      "other_directional_error": {
+        "lower": -0.1712295895081093,
+        "upper": -0.1712295895081093,
+        "n_planned_units": 24,
+        "n_families": 6,
+        "n_unique_records": 24,
+        "n_unknown_unique_records": 0,
+        "n_unknown_with_nonzero_coefficient": 0,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      },
+      "attribution_gap": {
+        "lower": 0.032591037930323655,
+        "upper": 0.032591037930323655,
+        "n_planned_units": 24,
+        "n_families": 6,
+        "n_unique_records": 48,
+        "n_unknown_unique_records": 0,
+        "n_unknown_with_nonzero_coefficient": 0,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      },
+      "self_mae": {
+        "lower": 0.15238657154758542,
+        "upper": 0.15238657154758542,
+        "n_planned_units": 24,
+        "n_families": 6,
+        "n_unique_records": 24,
+        "n_unknown_unique_records": 0,
+        "n_unknown_with_nonzero_coefficient": 0,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      },
+      "other_mae": {
+        "lower": 0.18094938487260673,
+        "upper": 0.18094938487260673,
+        "n_planned_units": 24,
+        "n_families": 6,
+        "n_unique_records": 24,
+        "n_unknown_unique_records": 0,
+        "n_unknown_with_nonzero_coefficient": 0,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    },
+    "interpretation": "Positive residual means too far toward A relative to oracle; categories are descriptive, not psychological causes."
+  },
+  "instruction_mae": [
+    {
+      "round": "R2",
+      "model": "qwen3-8b-thinking",
+      "source_section": "wording[model=qwen3-8b-thinking]/analyses[name=independent:instruction_main]",
+      "metric": "mae_contrast",
+      "counts": {
+        "candidate_sets": 64,
+        "complete_valid_sets": 62,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 2,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": -0.03075442393806852,
+        "n_observations": 62,
+        "n_families": 2,
+        "family_means": {
+          "7454a84050310498a2f48e4f": -0.03068571190385186,
+          "79c08a1a042aff63932b0334": -0.03082313597228518
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.03043038541848851,
+        "upper": -0.01913856385715022,
+        "n_planned_units": 64,
+        "n_families": 2,
+        "n_unique_records": 512,
+        "n_unknown_unique_records": 3,
+        "n_unknown_with_nonzero_coefficient": 3,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    },
+    {
+      "round": "R3",
+      "model": "qwen3-8b-thinking",
+      "source_section": "wording[model=qwen3-8b-thinking]/analyses[name=independent:instruction_main]",
+      "metric": "mae_contrast",
+      "counts": {
+        "candidate_sets": 96,
+        "complete_valid_sets": 94,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 2,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": -0.11037244899865177,
+        "n_observations": 94,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.15349471959671038,
+          "836fd5005fa40dded731d5d8": -0.11954148515123236,
+          "94041ee13ddade7c65b6e35d": -0.16510252876727158,
+          "96627aa93958adc679dacc26": -0.057273908635239804,
+          "d4bfd770680b83fe5ad86ed1": -0.09623125719227293,
+          "e6ef3240b1d41da619f96eee": -0.0705907946491835
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.10956572834945572,
+        "upper": -0.10446060191009249,
+        "n_planned_units": 96,
+        "n_families": 6,
+        "n_unique_records": 768,
+        "n_unknown_unique_records": 2,
+        "n_unknown_with_nonzero_coefficient": 2,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    }
+  ],
+  "instruction_mae_templates": [
+    {
+      "round": "R3",
+      "model": "qwen3-8b-thinking",
+      "source_section": "wording[model=qwen3-8b-thinking]/analyses[name=independent:instruction_main]/by_template/frequency_v3",
+      "metric": "mae_contrast",
+      "counts": {
+        "candidate_sets": 48,
+        "complete_valid_sets": 47,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 1,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": -0.01830497503011483,
+        "n_observations": 47,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.037365754837428676,
+          "836fd5005fa40dded731d5d8": -0.027483674389350128,
+          "94041ee13ddade7c65b6e35d": -0.020444785714285714,
+          "96627aa93958adc679dacc26": -0.0007463352638712643,
+          "d4bfd770680b83fe5ad86ed1": -0.008865173578751162,
+          "e6ef3240b1d41da619f96eee": -0.014924126397002023
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.017879474906450404,
+        "upper": -0.012689608793800355,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 384,
+        "n_unknown_unique_records": 1,
+        "n_unknown_with_nonzero_coefficient": 1,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    },
+    {
+      "round": "R3",
+      "model": "qwen3-8b-thinking",
+      "source_section": "wording[model=qwen3-8b-thinking]/analyses[name=independent:instruction_main]/by_template/likelihood_v3",
+      "metric": "mae_contrast",
+      "counts": {
+        "candidate_sets": 48,
+        "complete_valid_sets": 47,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 1,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": -0.20150636483485915,
+        "n_observations": 47,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.26962368435599204,
+          "836fd5005fa40dded731d5d8": -0.21159929591311458,
+          "94041ee13ddade7c65b6e35d": -0.2916780539386342,
+          "96627aa93958adc679dacc26": -0.11380148200660835,
+          "d4bfd770680b83fe5ad86ed1": -0.19607820989344066,
+          "e6ef3240b1d41da619f96eee": -0.12625746290136497
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.20125198179246112,
+        "upper": -0.1962315950263847,
+        "n_planned_units": 48,
+        "n_families": 6,
+        "n_unique_records": 384,
+        "n_unknown_unique_records": 1,
+        "n_unknown_with_nonzero_coefficient": 1,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    }
+  ],
+  "instruction_attribution": [
+    {
+      "round": "R2",
+      "model": "qwen3-8b-thinking",
+      "source_section": "wording[model=qwen3-8b-thinking]/analyses[name=independent:instruction_by_attribution]",
+      "metric": "signed_directional_effect",
+      "counts": {
+        "candidate_sets": 64,
+        "complete_valid_sets": 62,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 2,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": -0.0396160936800657,
+        "n_observations": 62,
+        "n_families": 2,
+        "family_means": {
+          "7454a84050310498a2f48e4f": -0.05221294641419605,
+          "79c08a1a042aff63932b0334": -0.02701924094593535
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.055390492400505205,
+        "upper": -0.03195299240050522,
+        "n_planned_units": 64,
+        "n_families": 2,
+        "n_unique_records": 512,
+        "n_unknown_unique_records": 3,
+        "n_unknown_with_nonzero_coefficient": 3,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    },
+    {
+      "round": "R3",
+      "model": "qwen3-8b-thinking",
+      "source_section": "wording[model=qwen3-8b-thinking]/analyses[name=independent:instruction_by_attribution]",
+      "metric": "signed_directional_effect",
+      "counts": {
+        "candidate_sets": 96,
+        "complete_valid_sets": 94,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 2,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": -0.0012228467486620433,
+        "n_observations": 94,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": -0.012244553571428573,
+          "836fd5005fa40dded731d5d8": 0.015838065607260005,
+          "94041ee13ddade7c65b6e35d": -0.025557444442444167,
+          "96627aa93958adc679dacc26": 0.004721974206944443,
+          "d4bfd770680b83fe5ad86ed1": 0.010195128205128206,
+          "e6ef3240b1d41da619f96eee": -0.0002902504974321724
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.006440187204523336,
+        "upper": 0.003976479462143329,
+        "n_planned_units": 96,
+        "n_families": 6,
+        "n_unique_records": 768,
+        "n_unknown_unique_records": 2,
+        "n_unknown_with_nonzero_coefficient": 2,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    }
+  ],
+  "qwen35_bounds": [
+    {
+      "round": "R3",
+      "model": "qwen35-9b-thinking",
+      "source_section": "wording[model=qwen35-9b-thinking]/analyses[name=independent:attribution:scoped:compatible]",
+      "metric": "signed_directional_effect",
+      "counts": {
+        "candidate_sets": 96,
+        "complete_valid_sets": 76,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 20,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 6.386304263949948e-09,
+        "n_observations": 76,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 9.722654458008823e-10,
+          "836fd5005fa40dded731d5d8": 1.0909090909026122e-08,
+          "94041ee13ddade7c65b6e35d": -7.163434903230503e-10,
+          "96627aa93958adc679dacc26": 6.036486231815356e-09,
+          "d4bfd770680b83fe5ad86ed1": 2.0299999993478313e-08,
+          "e6ef3240b1d41da619f96eee": 8.163264939020643e-10
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.103885365397942,
+        "upper": 0.11486463460205802,
+        "n_planned_units": 96,
+        "n_families": 6,
+        "n_unique_records": 192,
+        "n_unknown_unique_records": 21,
+        "n_unknown_with_nonzero_coefficient": 21,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    },
+    {
+      "round": "R3",
+      "model": "qwen35-9b-thinking",
+      "source_section": "wording[model=qwen35-9b-thinking]/analyses[name=independent:instruction_main]",
+      "metric": "mae_contrast",
+      "counts": {
+        "candidate_sets": 96,
+        "complete_valid_sets": 54,
+        "missing_cell_sets": 0,
+        "duplicate_cell_sets": 0,
+        "invalid_or_unobserved_sets": 42,
+        "incompatible_metadata_sets": 0
+      },
+      "point": {
+        "estimate": 1.583484255965535e-08,
+        "n_observations": 54,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 3.870998763816975e-08,
+          "836fd5005fa40dded731d5d8": 2.592002104815995e-08,
+          "94041ee13ddade7c65b6e35d": 1.0767441755918372e-09,
+          "96627aa93958adc679dacc26": 5.714284913305168e-11,
+          "d4bfd770680b83fe5ad86ed1": 2.9245159646877503e-08,
+          "e6ef3240b1d41da619f96eee": 0.0
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      },
+      "bounds": {
+        "lower": -0.12882811367530766,
+        "upper": 0.07541679889326373,
+        "n_planned_units": 96,
+        "n_families": 6,
+        "n_unique_records": 768,
+        "n_unknown_unique_records": 92,
+        "n_unknown_with_nonzero_coefficient": 92,
+        "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+      }
+    }
+  ],
+  "information_updates": {
+    "selection": "R3 Qwen3-8B, self attribution, scoped reminder, compatible output, both templates. Template strata are copied without reaggregation.",
+    "signal_hidden": [
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "positive",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "hidden_updates[model=qwen3-8b-thinking,protocol=positive,attribution=self,template_id=frequency_v3]",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 23
+        },
+        "point": {
+          "estimate": 0.24194166666666664,
+          "n_observations": 23,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.3488,
+            "836fd5005fa40dded731d5d8": 0.18967499999999998,
+            "94041ee13ddade7c65b6e35d": 0.402325,
+            "96627aa93958adc679dacc26": 0.0986,
+            "d4bfd770680b83fe5ad86ed1": 0.2711,
+            "e6ef3240b1d41da619f96eee": 0.14115
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.24194152134322663,
+          "n_observations": 23,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.34876624335233275,
+            "836fd5005fa40dded731d5d8": 0.1896759867116661,
+            "94041ee13ddade7c65b6e35d": 0.40236232896783364,
+            "96627aa93958adc679dacc26": 0.09859956552061376,
+            "d4bfd770680b83fe5ad86ed1": 0.2711079682667599,
+            "e6ef3240b1d41da619f96eee": 0.14113703524015347
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 1.4532344004192378e-07,
+          "n_observations": 23,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 3.375664766722131e-05,
+            "836fd5005fa40dded731d5d8": -9.867116661232966e-07,
+            "94041ee13ddade7c65b6e35d": -3.7328967833649696e-05,
+            "96627aa93958adc679dacc26": 4.3447938622917515e-07,
+            "d4bfd770680b83fe5ad86ed1": -7.968266759935302e-06,
+            "e6ef3240b1d41da619f96eee": 1.2964759846509355e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": 0.20231249999999995,
+          "upper": 0.24397916666666664,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 24,
+          "n_unknown_unique_records": 1,
+          "n_unknown_with_nonzero_coefficient": 1,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "zero",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "hidden_updates[model=qwen3-8b-thinking,protocol=zero,attribution=self,template_id=frequency_v3]",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 24
+        },
+        "point": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -6.938893903907228e-18,
+          "upper": -6.938893903907228e-18,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 24,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "negative",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "hidden_updates[model=qwen3-8b-thinking,protocol=negative,attribution=self,template_id=frequency_v3]",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 24
+        },
+        "point": {
+          "estimate": -0.23906991666666666,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.348725,
+            "836fd5005fa40dded731d5d8": -0.18964999999999999,
+            "94041ee13ddade7c65b6e35d": -0.40235,
+            "96627aa93958adc679dacc26": -0.0986,
+            "d4bfd770680b83fe5ad86ed1": -0.25405,
+            "e6ef3240b1d41da619f96eee": -0.14104450000000002
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": -0.23909631028195624,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.34876624335233275,
+            "836fd5005fa40dded731d5d8": -0.1896759867116661,
+            "94041ee13ddade7c65b6e35d": -0.40236232896783364,
+            "96627aa93958adc679dacc26": -0.09859956552061376,
+            "d4bfd770680b83fe5ad86ed1": -0.25403670189913785,
+            "e6ef3240b1d41da619f96eee": -0.14113703524015347
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 2.6393615289606435e-05,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 4.124335233277043e-05,
+            "836fd5005fa40dded731d5d8": 2.5986711666120543e-05,
+            "94041ee13ddade7c65b6e35d": 1.2328967833652449e-05,
+            "96627aa93958adc679dacc26": -4.3447938622917515e-07,
+            "d4bfd770680b83fe5ad86ed1": -1.3298100862160767e-05,
+            "e6ef3240b1d41da619f96eee": 9.253524015348513e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -0.23906991666666666,
+          "upper": -0.23906991666666666,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 24,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "positive",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "hidden_updates[model=qwen3-8b-thinking,protocol=positive,attribution=self,template_id=likelihood_v3]",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 24
+        },
+        "point": {
+          "estimate": 0.2390958333333333,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.3488,
+            "836fd5005fa40dded731d5d8": 0.18964999999999999,
+            "94041ee13ddade7c65b6e35d": 0.40235,
+            "96627aa93958adc679dacc26": 0.09865000000000002,
+            "d4bfd770680b83fe5ad86ed1": 0.253975,
+            "e6ef3240b1d41da619f96eee": 0.14115
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.23909631028195624,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.34876624335233275,
+            "836fd5005fa40dded731d5d8": 0.1896759867116661,
+            "94041ee13ddade7c65b6e35d": 0.40236232896783364,
+            "96627aa93958adc679dacc26": 0.09859956552061376,
+            "d4bfd770680b83fe5ad86ed1": 0.25403670189913785,
+            "e6ef3240b1d41da619f96eee": 0.14113703524015347
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": -4.769486229369799e-07,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 3.375664766722131e-05,
+            "836fd5005fa40dded731d5d8": -2.5986711666120543e-05,
+            "94041ee13ddade7c65b6e35d": -1.2328967833652449e-05,
+            "96627aa93958adc679dacc26": 5.0434479386251424e-05,
+            "d4bfd770680b83fe5ad86ed1": -6.170189913783097e-05,
+            "e6ef3240b1d41da619f96eee": 1.2964759846509355e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": 0.23909583333333329,
+          "upper": 0.23909583333333329,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 24,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "zero",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "hidden_updates[model=qwen3-8b-thinking,protocol=zero,attribution=self,template_id=likelihood_v3]",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 24
+        },
+        "point": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -6.938893903907228e-18,
+          "upper": -6.938893903907228e-18,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 24,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "negative",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "hidden_updates[model=qwen3-8b-thinking,protocol=negative,attribution=self,template_id=likelihood_v3]",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 24
+        },
+        "point": {
+          "estimate": -0.2390865853666667,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.3488,
+            "836fd5005fa40dded731d5d8": -0.18964999999999999,
+            "94041ee13ddade7c65b6e35d": -0.40235,
+            "96627aa93958adc679dacc26": -0.0986,
+            "d4bfd770680b83fe5ad86ed1": -0.25395,
+            "e6ef3240b1d41da619f96eee": -0.1411695122
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": -0.23909631028195624,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -0.34876624335233275,
+            "836fd5005fa40dded731d5d8": -0.1896759867116661,
+            "94041ee13ddade7c65b6e35d": -0.40236232896783364,
+            "96627aa93958adc679dacc26": -0.09859956552061376,
+            "d4bfd770680b83fe5ad86ed1": -0.25403670189913785,
+            "e6ef3240b1d41da619f96eee": -0.14113703524015347
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 9.72491528960541e-06,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -3.375664766722131e-05,
+            "836fd5005fa40dded731d5d8": 2.5986711666120543e-05,
+            "94041ee13ddade7c65b6e35d": 1.2328967833652449e-05,
+            "96627aa93958adc679dacc26": -4.3447938622917515e-07,
+            "d4bfd770680b83fe5ad86ed1": 8.67018991378421e-05,
+            "e6ef3240b1d41da619f96eee": -3.247695984653215e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -0.23908658536666666,
+          "upper": -0.23908658536666666,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 24,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      }
+    ],
+    "signal_visible": [
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "positive",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=positive:self:answer_visible_minus_hidden]/by_template/frequency_v3",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 21,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 3,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": -1.0194444444450785e-05,
+          "n_observations": 21,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": -6.666666666669634e-05,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 5.499999999991623e-06
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 21,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": -1.0194444444450785e-05,
+          "n_observations": 21,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": -6.666666666669634e-05,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 5.499999999991623e-06
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -0.010761583333333331,
+          "upper": 0.11423841666666665,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 48,
+          "n_unknown_unique_records": 3,
+          "n_unknown_with_nonzero_coefficient": 3,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "zero",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=zero:self:answer_visible_minus_hidden]/by_template/frequency_v3",
+        "counts": {
+          "candidate_sets": 48,
+          "complete_valid_sets": 48,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 0,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": -5.082317073170963e-06,
+          "n_observations": 48,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 1.2499999999998623e-05,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 1.2499999999998623e-05,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": -5.5493902439023024e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 48,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": -5.082317073170963e-06,
+          "n_observations": 48,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 1.2499999999998623e-05,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 1.2499999999998623e-05,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": -5.5493902439023024e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -5.082317073166337e-06,
+          "upper": -5.082317073166337e-06,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 72,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "negative",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=negative:self:answer_visible_minus_hidden]/by_template/frequency_v3",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 24,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 0,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": -1.2499999999998623e-05,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": -7.499999999999174e-05,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": -1.2499999999998623e-05,
+          "n_observations": 24,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": -7.499999999999174e-05,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -1.2499999999998623e-05,
+          "upper": -1.2499999999998623e-05,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 48,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "independent",
+        "attribution": "self",
+        "template_id": "frequency_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=independent:self:answer_visible_minus_hidden]/by_template/frequency_v3",
+        "counts": {
+          "candidate_sets": 48,
+          "complete_valid_sets": 47,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 1,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": 0.1886471488095238,
+          "n_observations": 47,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.241255,
+            "836fd5005fa40dded731d5d8": 0.179205,
+            "94041ee13ddade7c65b6e35d": 0.2750791428571428,
+            "96627aa93958adc679dacc26": 0.09941874999999999,
+            "d4bfd770680b83fe5ad86ed1": 0.204825,
+            "e6ef3240b1d41da619f96eee": 0.1321
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.18864689357485612,
+          "n_observations": 47,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.24126085762852453,
+            "836fd5005fa40dded731d5d8": 0.1792078793755823,
+            "94041ee13ddade7c65b6e35d": 0.2750734781914322,
+            "96627aa93958adc679dacc26": 0.09941361486858027,
+            "d4bfd770680b83fe5ad86ed1": 0.20482742241665944,
+            "e6ef3240b1d41da619f96eee": 0.132098108968358
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 2.552346676774686e-07,
+          "n_observations": 47,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -5.857628524538142e-06,
+            "836fd5005fa40dded731d5d8": -2.87937558230561e-06,
+            "94041ee13ddade7c65b6e35d": 5.6646657106329145e-06,
+            "96627aa93958adc679dacc26": 5.135131419718719e-06,
+            "d4bfd770680b83fe5ad86ed1": -2.422416659434573e-06,
+            "e6ef3240b1d41da619f96eee": 1.891031641991503e-06
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": 0.16290174999999998,
+          "upper": 0.18373508333333333,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 72,
+          "n_unknown_unique_records": 1,
+          "n_unknown_with_nonzero_coefficient": 1,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "positive",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=positive:self:answer_visible_minus_hidden]/by_template/likelihood_v3",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 16,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 8,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": 9.583333333333204e-05,
+          "n_observations": 16,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 9.999999999998899e-05,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0004750000000000032
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 16,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 9.583333333333204e-05,
+          "n_observations": 16,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 9.999999999998899e-05,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0004750000000000032
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -0.091,
+          "upper": 0.24233333333333335,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 48,
+          "n_unknown_unique_records": 8,
+          "n_unknown_with_nonzero_coefficient": 8,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "zero",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=zero:self:answer_visible_minus_hidden]/by_template/likelihood_v3",
+        "counts": {
+          "candidate_sets": 48,
+          "complete_valid_sets": 48,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 0,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": -7.024898373983804e-05,
+          "n_observations": 48,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": -0.00011874999999999386,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": -3.750000000000975e-05,
+            "d4bfd770680b83fe5ad86ed1": -2.4999999999997247e-05,
+            "e6ef3240b1d41da619f96eee": -0.00024024390243902738
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 48,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": -7.024898373983804e-05,
+          "n_observations": 48,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": -0.00011874999999999386,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": -3.750000000000975e-05,
+            "d4bfd770680b83fe5ad86ed1": -2.4999999999997247e-05,
+            "e6ef3240b1d41da619f96eee": -0.00024024390243902738
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -7.024898373986926e-05,
+          "upper": -7.024898373986926e-05,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 72,
+          "n_unknown_unique_records": 0,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "negative",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=negative:self:answer_visible_minus_hidden]/by_template/likelihood_v3",
+        "counts": {
+          "candidate_sets": 24,
+          "complete_valid_sets": 22,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 2,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": 2.6388888888914316e-06,
+          "n_observations": 22,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -3.333333333332966e-05,
+            "836fd5005fa40dded731d5d8": 7.499999999999347e-05,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": -3.333333333332966e-05,
+            "d4bfd770680b83fe5ad86ed1": -1.7500000000010563e-05,
+            "e6ef3240b1d41da619f96eee": 2.5000000000025002e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.0,
+          "n_observations": 22,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.0,
+            "836fd5005fa40dded731d5d8": 0.0,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": 0.0,
+            "d4bfd770680b83fe5ad86ed1": 0.0,
+            "e6ef3240b1d41da619f96eee": 0.0
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 2.6388888888914316e-06,
+          "n_observations": 22,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -3.333333333332966e-05,
+            "836fd5005fa40dded731d5d8": 7.499999999999347e-05,
+            "94041ee13ddade7c65b6e35d": 0.0,
+            "96627aa93958adc679dacc26": -3.333333333332966e-05,
+            "d4bfd770680b83fe5ad86ed1": -1.7500000000010563e-05,
+            "e6ef3240b1d41da619f96eee": 2.5000000000025002e-05
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": -0.05334041666666668,
+          "upper": 0.02999291666666666,
+          "n_planned_units": 24,
+          "n_families": 6,
+          "n_unique_records": 48,
+          "n_unknown_unique_records": 2,
+          "n_unknown_with_nonzero_coefficient": 2,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      },
+      {
+        "round": "R3",
+        "model": "qwen3-8b-thinking",
+        "protocol": "independent",
+        "attribution": "self",
+        "template_id": "likelihood_v3",
+        "source_section": "mechanism[model=qwen3-8b-thinking]/answer_visibility_increments[name=independent:self:answer_visible_minus_hidden]/by_template/likelihood_v3",
+        "counts": {
+          "candidate_sets": 48,
+          "complete_valid_sets": 40,
+          "missing_cell_sets": 0,
+          "duplicate_cell_sets": 0,
+          "invalid_or_unobserved_sets": 8,
+          "incompatible_metadata_sets": 0
+        },
+        "point": {
+          "estimate": 0.19364583363194443,
+          "n_observations": 40,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.29195666666666664,
+            "836fd5005fa40dded731d5d8": 0.179205,
+            "94041ee13ddade7c65b6e35d": 0.2451692875,
+            "96627aa93958adc679dacc26": 0.09941904762499999,
+            "d4bfd770680b83fe5ad86ed1": 0.20482499999999998,
+            "e6ef3240b1d41da619f96eee": 0.1413
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "normative_same_sets": {
+          "estimate": 0.19364453411705632,
+          "n_observations": 40,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": 0.2919573230213852,
+            "836fd5005fa40dded731d5d8": 0.1792078793755823,
+            "94041ee13ddade7c65b6e35d": 0.24516008503510917,
+            "96627aa93958adc679dacc26": 0.09941361486858027,
+            "d4bfd770680b83fe5ad86ed1": 0.2048274224166594,
+            "e6ef3240b1d41da619f96eee": 0.14130087998502158
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "residual": {
+          "estimate": 1.2995148881152507e-06,
+          "n_observations": 40,
+          "n_families": 6,
+          "family_means": {
+            "2681e835e1fba79d5379af7c": -6.563547185414973e-07,
+            "836fd5005fa40dded731d5d8": -2.87937558230561e-06,
+            "94041ee13ddade7c65b6e35d": 9.202464890814901e-06,
+            "96627aa93958adc679dacc26": 5.432756419719055e-06,
+            "d4bfd770680b83fe5ad86ed1": -2.4224166594311036e-06,
+            "e6ef3240b1d41da619f96eee": -8.79985021564241e-07
+          },
+          "ci95": null,
+          "uncertainty_method": "none; fixed finite design, no sampling inference"
+        },
+        "bounds": {
+          "lower": 0.18366222252083333,
+          "upper": 0.18366222252083333,
+          "n_planned_units": 48,
+          "n_families": 6,
+          "n_unique_records": 72,
+          "n_unknown_unique_records": 4,
+          "n_unknown_with_nonzero_coefficient": 0,
+          "method": "sharp finite-grid bounds: valid probabilities fixed; each distinct missing/invalid record has one unknown p in [0,1]; not a confidence interval"
+        }
+      }
+    ]
+  },
+  "r3_coverage": [
+    {
+      "model": "qwen3-8b-thinking",
+      "n_planned": 2736,
+      "n_observed": 2736,
+      "n_valid": 2684,
+      "valid_rate": 0.9809941520467836,
+      "status_counts": {
+        "ok": 2684,
+        "truncated": 52
+      },
+      "mae": {
+        "estimate": 0.015773187433947507,
+        "n_observations": 2684,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 0.021911932743918002,
+          "836fd5005fa40dded731d5d8": 0.017078887057088602,
+          "94041ee13ddade7c65b6e35d": 0.02212027089186559,
+          "96627aa93958adc679dacc26": 0.00829624697838785,
+          "d4bfd770680b83fe5ad86ed1": 0.014745709699604048,
+          "e6ef3240b1d41da619f96eee": 0.010486077232820953
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      }
+    },
+    {
+      "model": "qwen35-9b-thinking",
+      "n_planned": 2736,
+      "n_observed": 2736,
+      "n_valid": 2220,
+      "valid_rate": 0.8114035087719298,
+      "status_counts": {
+        "ok": 2220,
+        "truncated": 515,
+        "invalid": 1
+      },
+      "mae": {
+        "estimate": 2.8200135935405407e-07,
+        "n_observations": 2220,
+        "n_families": 6,
+        "family_means": {
+          "2681e835e1fba79d5379af7c": 1.775587803260097e-08,
+          "836fd5005fa40dded731d5d8": 9.341686679530067e-08,
+          "94041ee13ddade7c65b6e35d": 1.167691421730576e-06,
+          "96627aa93958adc679dacc26": 1.598071363459163e-07,
+          "d4bfd770680b83fe5ad86ed1": 1.6830555433871987e-07,
+          "e6ef3240b1d41da619f96eee": 8.503129888121075e-08
+        },
+        "ci95": null,
+        "uncertainty_method": "none; fixed finite design, no sampling inference"
+      }
+    }
+  ],
+  "interpretation": {
+    "point": "Family equally weighted estimate over complete valid matched sets.",
+    "bounds": "Full planned finite-grid missing-probability bounds, not confidence intervals. Each distinct missing record has one probability in [0,1], with shared coefficients combined first. The complete-set point and full-grid bounds have different target sets.",
+    "r1_interval": "Frozen 95% percentile bootstrap interval over numerical-family means, used as design-composition sensitivity, not population inference.",
+    "counts": "Complete matched sets / planned matched sets. Instruction contrasts require all eight factorial cells. Attribution contrasts require two cells.",
+    "units": "Probabilities and probability errors on the 0 to 1 scale.",
+    "information_updates": "Signal-hidden points are directional changes from the prior among valid outputs. Signal-visible points compare A visible with A hidden on complete pairs. Normative points use exactly the same valid outputs or complete pairs. The displayed bounds are for the directional update itself, not the update residual, over the full planned template stratum."
+  }
+}
