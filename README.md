@@ -21,10 +21,12 @@ python scripts/check_repository.py
 python scripts/reproduce.py --suite all
 ```
 
-The last command downloads the three exact archives from the
-[evidence release](https://github.com/wentao-2/LLM-answer/releases/tag/evidence-20261012),
-checks their sizes and SHA256 identities, extracts them into `.work/`, and runs
-their frozen offline scientific verifiers. The archives total about 148 MB and
+The three exact archives are available in the
+[anonymous evidence repository](https://anonymous.4open.science/r/LLM-answer-442D/)
+under `evidence/`. The last command uses the included archives, or downloads
+them from that anonymous repository if they are absent, checks their sizes and
+SHA256 identities, extracts them into `.work/`, and runs their frozen offline
+scientific verifiers. The archives total about 148 MB and
 expand to about 1.15 GB. Verification writes reports under
 `.work/offline/reports/` and does not run model inference.
 
@@ -53,13 +55,15 @@ and output interpretation.
 | `analysis/figures/` | Vector PDF, editable SVG, plotting provenance and editable draw.io diagrams. |
 | `analysis/sections/` | Generated numerical LaTeX tables. |
 | `scripts/` | Portable verification, plotting and table entry points. |
-| `reproducibility/` | Published archive URLs, exact sizes and SHA256 identities. |
+| `evidence/` | The three complete evidence ZIPs, with unchanged bytes. |
+| `reproducibility/` | Anonymous archive download URLs, exact sizes and SHA256 identities. |
 | `provenance/` | File-by-file source-copy identities. |
 | `docs/` | Experiment map, environments and reproduction instructions. |
 
-The complete databases and terminal records are release assets, rather than
-Git history. The code checkout remains small. Original archive filenames and
-internal record identifiers are retained to preserve their hash links.
+The complete databases and terminal records are included as ZIPs under
+`evidence/`, so anonymous repository mirrors can serve ordinary file paths.
+Original archive filenames and internal record identifiers are retained to
+preserve their hash links.
 
 ## Figures and tables
 

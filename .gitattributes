@@ -3,6 +3,7 @@ experiments/** -text
 analysis/** -text
 provenance/** -text
 reproducibility/** -text
+evidence/*.zip -text
 scripts/*.py text eol=lf
 tests/*.py text eol=lf
 docs/*.md text eol=lf

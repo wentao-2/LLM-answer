@@ -1,4 +1,23 @@
-# Publication validation
+# Anonymous evidence link update
+
+2026-10-13. README and reproduction documentation now point to the anonymous
+evidence repository LLM-answer-442D. The machine-readable manifest uses its
+direct file URLs under evidence/, rather than GitHub Release URLs.
+
+Three ordinary repository ZIP files are exact copies of the previously
+published assets. All original sizes and SHA256 identities match. The helper
+can use included archives without network access. Six helper tests pass,
+including detection of corrupt included evidence and offline acquisition.
+The source-copy and figure input checks pass for all 205 copied files and
+all 102 figure points. Each real archive was acquired into a fresh local
+cache through the updated helper and its size and SHA256 were verified.
+
+The owner will synchronize the anonymous mirrors after this GitHub update.
+Anonymous remote ZIP downloads therefore have not yet been verified. No
+new inference, scientific record modification, or new scientific reanalysis
+was performed during this link update. The original Release is retained.
+
+# Previous publication validation
 
 The following checks were actually completed on 2026-10-12 using Python
 3.12.14. They verify retained outputs and publication code. No new model

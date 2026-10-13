@@ -30,7 +30,12 @@ attempt use a new `--work-dir`, retaining the failed evidence for inspection.
 | `wording-history` | `supplementary-review-supplement-20261011.zip` | 43,422,751 | `3a617bcd361ff131ec1a17b8e62894e99460d156adf4e2b222ea0d17f7be4ebd` |
 | `dependence-followup` | `supplementary-dependence-followup-20261012.zip` | 43,542,064 | `7ebfbc89bb30ba8267997359276e88b0ae58f1e37a434a7a8848fc01efed510d` |
 
+The archives are included under `evidence/` and are also accessible through the
+[anonymous evidence repository](https://anonymous.4open.science/r/LLM-answer-442D/).
 The URLs and sizes are machine-readable in `reproducibility/archives.json`.
+The reproduction helper first checks the download cache, then uses a bundled
+archive if available, and otherwise downloads its exact anonymous file URL.
+The anonymous mirror must be synchronized after this repository update.
 Each full archive includes its own scientific verifier and a member identity
 ledger. The verifiers have different scopes and must be run independently.
 

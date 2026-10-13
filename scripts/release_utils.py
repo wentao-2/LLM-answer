@@ -42,11 +42,19 @@ def acquire_archive(metadata, directory, offline=False):
     if target.exists():
         verify_archive(target, metadata)
         return target
+    bundled = ROOT / 'evidence' / name
+    if bundled.is_file():
+        verify_archive(bundled, metadata)
+        partial = target.with_suffix('.zip.part')
+        shutil.copyfile(bundled, partial)
+        verify_archive(partial, metadata)
+        partial.replace(target)
+        return target
     if offline:
         raise FileNotFoundError('Offline archive is absent: ' + str(target))
-    allowed = 'https://github.com/wentao-2/LLM-answer/releases/download/'
-    if not metadata['url'].startswith(allowed):
-        raise ValueError('Archive URL is outside the documented repository release')
+    allowed = 'https://anonymous.4open.science/api/repo/LLM-answer-442D/file/evidence/'
+    if metadata['url'] != allowed + name + '?download=1':
+        raise ValueError('Archive URL differs from the documented anonymous file path')
     partial = target.with_suffix('.zip.part')
     offset = partial.stat().st_size if partial.exists() else 0
     if offset >= metadata['bytes']:

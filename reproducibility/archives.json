@@ -7,19 +7,20 @@
       "file": "supplementary-extension-20261010.zip",
       "sha256": "d57e3687fa45bf079af2f12d928a75ca64d85d81649d2b691a30a4118f981244",
       "bytes": 61100150,
-      "url": "https://github.com/wentao-2/LLM-answer/releases/download/evidence-20261012/supplementary-extension-20261010.zip"
+      "url": "https://anonymous.4open.science/api/repo/LLM-answer-442D/file/evidence/supplementary-extension-20261010.zip?download=1"
     },
     "wording-history": {
       "file": "supplementary-review-supplement-20261011.zip",
       "sha256": "3a617bcd361ff131ec1a17b8e62894e99460d156adf4e2b222ea0d17f7be4ebd",
       "bytes": 43422751,
-      "url": "https://github.com/wentao-2/LLM-answer/releases/download/evidence-20261012/supplementary-review-supplement-20261011.zip"
+      "url": "https://anonymous.4open.science/api/repo/LLM-answer-442D/file/evidence/supplementary-review-supplement-20261011.zip?download=1"
     },
     "dependence-followup": {
       "file": "supplementary-dependence-followup-20261012.zip",
       "sha256": "7ebfbc89bb30ba8267997359276e88b0ae58f1e37a434a7a8848fc01efed510d",
       "bytes": 43542064,
-      "url": "https://github.com/wentao-2/LLM-answer/releases/download/evidence-20261012/supplementary-dependence-followup-20261012.zip"
+      "url": "https://anonymous.4open.science/api/repo/LLM-answer-442D/file/evidence/supplementary-dependence-followup-20261012.zip?download=1"
     }
-  }
+  },
+  "evidence_repository": "https://anonymous.4open.science/r/LLM-answer-442D/"
 }
