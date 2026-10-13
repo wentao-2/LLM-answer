@@ -52,9 +52,9 @@ def acquire_archive(metadata, directory, offline=False):
         return target
     if offline:
         raise FileNotFoundError('Offline archive is absent: ' + str(target))
-    allowed = 'https://anonymous.4open.science/api/repo/LLM-answer-E1B3/file/evidence/'
-    if metadata['url'] != allowed + name + '?download=1':
-        raise ValueError('Archive URL differs from the documented anonymous file path')
+    allowed = 'https://raw.githubusercontent.com/wentao-2/LLM-answer/main/evidence/'
+    if metadata['url'] != allowed + name:
+        raise ValueError('Archive URL differs from the documented GitHub file path')
     partial = target.with_suffix('.zip.part')
     offset = partial.stat().st_size if partial.exists() else 0
     if offset >= metadata['bytes']:

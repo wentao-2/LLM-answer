@@ -1,22 +1,23 @@
-# Single repository and anonymous entry
+# Code and evidence in one GitHub repository
 
-2026-10-13. README and reproduction documentation now point to the anonymous
-evidence repository LLM-answer-E1B3. The machine-readable manifest uses its
-direct file URLs under evidence/, rather than GitHub Release URLs.
+2026-10-13. README and reproduction documentation link to the included
+archives under evidence/ using relative paths. The machine-readable manifest
+and downloader use direct GitHub file URLs. No anonymous repository URL is
+required by the GitHub documentation or reproduction helper. All three GitHub
+file URLs respond to a one-byte Range request with the expected total size.
+This URL check does not constitute a full remote archive download.
 
 Three ordinary repository ZIP files are exact copies of the previously
 published assets. All original sizes and SHA256 identities match. The helper
 can use included archives without network access. Six helper tests pass,
 including detection of corrupt included evidence and offline acquisition.
 The source-copy and figure input checks pass for all 205 copied files and
-all 102 figure points. Each real archive was acquired into a fresh local
-cache through the updated helper and its size and SHA256 were verified.
+all 102 figure points. Each real archive was previously acquired into a fresh
+local cache through the helper and its size and SHA256 were verified.
 
-Code and evidence share one GitHub repository and one anonymous mirror, E1B3.
-The owner will synchronize E1B3 after this GitHub update.
-Anonymous remote ZIP downloads therefore have not yet been verified. No
-new inference, scientific record modification, or new scientific reanalysis
-was performed during this link update. The original Release is retained.
+No new inference, scientific record modification, or new scientific
+reanalysis was performed during this link update. The original Release is
+retained alongside the ordinary repository files.
 
 # Previous publication validation
 

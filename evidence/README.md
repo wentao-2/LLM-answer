@@ -2,10 +2,7 @@
 
 These are byte-identical copies of the three evidence archives published on
 2026-10-12. Their sizes and SHA256 identities remain unchanged. They are normal
-repository files so that anonymous repository mirrors can expose them.
-
-Anonymous evidence entry:
-https://anonymous.4open.science/r/LLM-answer-E1B3/
+repository files in this directory. The links below open the included ZIPs.
 
 | Archive | Bytes | SHA256 |
 | --- | ---: | --- |

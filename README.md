@@ -21,13 +21,11 @@ python scripts/check_repository.py
 python scripts/reproduce.py --suite all
 ```
 
-Code and the three exact evidence archives share this repository. The archives
-are available in the same
-[anonymous repository](https://anonymous.4open.science/r/LLM-answer-E1B3/)
-under `evidence/`. The last command uses the included archives, or downloads
-them from that anonymous repository if they are absent, checks their sizes and
-SHA256 identities, extracts them into `.work/`, and runs their frozen offline
-scientific verifiers. The archives total about 148 MB and
+Code and the three exact evidence archives share this repository under
+[`evidence/`](evidence/README.md). The last command uses the included archives,
+or downloads them from this GitHub repository if they are absent, checks their
+sizes and SHA256 identities, extracts them into `.work/`, and runs their frozen
+offline scientific verifiers. The archives total about 148 MB and
 expand to about 1.15 GB. Verification writes reports under
 `.work/offline/reports/` and does not run model inference.
 
@@ -57,12 +55,12 @@ and output interpretation.
 | `analysis/sections/` | Generated numerical LaTeX tables. |
 | `scripts/` | Portable verification, plotting and table entry points. |
 | `evidence/` | The three complete evidence ZIPs, with unchanged bytes. |
-| `reproducibility/` | Anonymous archive download URLs, exact sizes and SHA256 identities. |
+| `reproducibility/` | GitHub archive download URLs, exact sizes and SHA256 identities. |
 | `provenance/` | File-by-file source-copy identities. |
 | `docs/` | Experiment map, environments and reproduction instructions. |
 
 The complete databases and terminal records are included as ZIPs under
-`evidence/`, so anonymous repository mirrors can serve ordinary file paths.
+`evidence/` as ordinary repository files.
 Original archive filenames and internal record identifiers are retained to
 preserve their hash links.
 
