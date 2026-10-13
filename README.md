@@ -21,8 +21,9 @@ python scripts/check_repository.py
 python scripts/reproduce.py --suite all
 ```
 
-The three exact archives are available in the
-[anonymous evidence repository](https://anonymous.4open.science/r/LLM-answer-442D/)
+Code and the three exact evidence archives share this repository. The archives
+are available in the same
+[anonymous repository](https://anonymous.4open.science/r/LLM-answer-E1B3/)
 under `evidence/`. The last command uses the included archives, or downloads
 them from that anonymous repository if they are absent, checks their sizes and
 SHA256 identities, extracts them into `.work/`, and runs their frozen offline

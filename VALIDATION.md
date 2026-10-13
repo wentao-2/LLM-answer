@@ -1,7 +1,7 @@
-# Anonymous evidence link update
+# Single repository and anonymous entry
 
 2026-10-13. README and reproduction documentation now point to the anonymous
-evidence repository LLM-answer-442D. The machine-readable manifest uses its
+evidence repository LLM-answer-E1B3. The machine-readable manifest uses its
 direct file URLs under evidence/, rather than GitHub Release URLs.
 
 Three ordinary repository ZIP files are exact copies of the previously
@@ -12,7 +12,8 @@ The source-copy and figure input checks pass for all 205 copied files and
 all 102 figure points. Each real archive was acquired into a fresh local
 cache through the updated helper and its size and SHA256 were verified.
 
-The owner will synchronize the anonymous mirrors after this GitHub update.
+Code and evidence share one GitHub repository and one anonymous mirror, E1B3.
+The owner will synchronize E1B3 after this GitHub update.
 Anonymous remote ZIP downloads therefore have not yet been verified. No
 new inference, scientific record modification, or new scientific reanalysis
 was performed during this link update. The original Release is retained.

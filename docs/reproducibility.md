@@ -31,7 +31,7 @@ attempt use a new `--work-dir`, retaining the failed evidence for inspection.
 | `dependence-followup` | `supplementary-dependence-followup-20261012.zip` | 43,542,064 | `7ebfbc89bb30ba8267997359276e88b0ae58f1e37a434a7a8848fc01efed510d` |
 
 The archives are included under `evidence/` and are also accessible through the
-[anonymous evidence repository](https://anonymous.4open.science/r/LLM-answer-442D/).
+[anonymous repository](https://anonymous.4open.science/r/LLM-answer-E1B3/).
 The URLs and sizes are machine-readable in `reproducibility/archives.json`.
 The reproduction helper first checks the download cache, then uses a bundled
 archive if available, and otherwise downloads its exact anonymous file URL.
